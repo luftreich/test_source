@@ -1,0 +1,427 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+ALL_USB_DISK	xl_mnt.h	8;"	d
+BIN	Makefile	/^BIN = xunlei_test$/;"	m
+BLUE_LED	led_test.c	31;"	d	file:
+BUFFER_SIZE	xl_mnt_msg_process.c	19;"	d	file:
+BUF_LEN	xl_usb_mng.c	45;"	d	file:
+CreateMyFile	xl_mnt_mng.c	/^static int CreateMyFile(char * szFileName,int nFileLength)$/;"	f	file:	signature:(char * szFileName,int nFileLength)
+DEV_CUT_NAME	xl_usb_device.c	20;"	d	file:
+DISK_MOUNTED	xl_mnt.h	9;"	d
+DISK_UNMOUNTED	xl_mnt.h	10;"	d
+EN_ACTION	xl_mnt.h	/^}EN_ACTION;$/;"	t	typeref:enum:tagEN_ACTION
+EN_DEVICE_TYPE	xl_mnt.h	/^}EN_DEVICE_TYPE;$/;"	t	typeref:enum:tagEN_DEVICE_TYPE
+EN_LED_ALL	led_test.c	/^        EN_LED_ALL,$/;"	e	enum:tagEN_DEVICE_TYPE	file:
+EN_LED_BLUE	led_test.c	/^        EN_LED_BLUE,$/;"	e	enum:tagEN_DEVICE_TYPE	file:
+EN_LED_BLUE	xl_mnt.h	/^    EN_LED_BLUE,    \/*blue led*\/$/;"	e	enum:tagEN_LED_COLOR
+EN_LED_COLOR	led_test.c	/^}EN_LED_COLOR;$/;"	t	typeref:enum:tagEN_DEVICE_TYPE	file:
+EN_LED_COLOR	xl_mnt.h	/^}EN_LED_COLOR;$/;"	t	typeref:enum:tagEN_LED_COLOR
+EN_LED_DARK	led_test.c	/^        EN_LED_DARK$/;"	e	enum:tagEN_DEVICE_TYPE	file:
+EN_LED_DARK	xl_mnt.h	/^    EN_LED_DARK$/;"	e	enum:tagEN_LED_COLOR
+EN_LED_GREEN	led_test.c	/^        EN_LED_GREEN,$/;"	e	enum:tagEN_DEVICE_TYPE	file:
+EN_LED_ORANGE	xl_mnt.h	/^    EN_LED_ORANGE,   \/*orange led*\/$/;"	e	enum:tagEN_LED_COLOR
+EN_LED_RED	led_test.c	/^        EN_LED_RED,$/;"	e	enum:tagEN_DEVICE_TYPE	file:
+EN_LED_RED	xl_mnt.h	/^    EN_LED_RED,   \/*red led*\/$/;"	e	enum:tagEN_LED_COLOR
+EN_LED_WHITE	xl_mnt.h	/^    EN_LED_WHITE,   \/*white led*\/$/;"	e	enum:tagEN_LED_COLOR
+EN_MMT_ERRNO_END	xl_mnt.h	/^    EN_MMT_ERRNO_END,  $/;"	e	enum:tagEN_MNT_ERRNO
+EN_MNT_ERRNO	xl_mnt.h	/^}EN_MNT_ERRNO;$/;"	t	typeref:enum:tagEN_MNT_ERRNO
+EN_MNT_ERRNO_SUCC	xl_mnt.h	/^    EN_MNT_ERRNO_SUCC = 0,$/;"	e	enum:tagEN_MNT_ERRNO
+EN_MNT_ERRNO_UNMOUNT_FAILED	xl_mnt.h	/^    EN_MNT_ERRNO_UNMOUNT_FAILED = XL_ERRNO_BASEID_MNT+1,                    \/*usb  umount failed *\/$/;"	e	enum:tagEN_MNT_ERRNO
+EN_MNT_ERRNO_USB_NOT_PLUGIN	xl_mnt.h	/^    EN_MNT_ERRNO_USB_NOT_PLUGIN,                    \/*no usb disk plugin*\/$/;"	e	enum:tagEN_MNT_ERRNO
+EN_MNT_ERRNO_USB_TIMEOUT	xl_mnt.h	/^    EN_MNT_ERRNO_USB_TIMEOUT,                   \/*usb active respond failed*\/$/;"	e	enum:tagEN_MNT_ERRNO
+EN_MNT_MODULE_ID	xl_mnt_command.h	/^}EN_MNT_MODULE_ID;$/;"	t	typeref:enum:tagEN_MNT_MODULE_ID
+EN_MNT_SLAVE_KEY	xl_mnt_command.h	/^    EN_MNT_SLAVE_KEY, $/;"	e	enum:tagEN_MNT_MODULE_ID
+EN_MNT_SLAVE_LED	xl_mnt_command.h	/^    EN_MNT_SLAVE_LED,$/;"	e	enum:tagEN_MNT_MODULE_ID
+EN_MNT_SLAVE_SYS	xl_mnt_command.h	/^    EN_MNT_SLAVE_SYS   $/;"	e	enum:tagEN_MNT_MODULE_ID
+EN_MNT_SLAVE_USB	xl_mnt_command.h	/^    EN_MNT_SLAVE_USB,$/;"	e	enum:tagEN_MNT_MODULE_ID
+EN_MNT_USB_PLUG_IN	xl_mnt.h	/^    EN_MNT_USB_PLUG_IN=1,$/;"	e	enum:tagEN_MNT_USB_STATE
+EN_MNT_USB_PLUG_OUT	xl_mnt.h	/^    EN_MNT_USB_PLUG_OUT,$/;"	e	enum:tagEN_MNT_USB_STATE
+EN_MNT_USB_QUERY	xl_mnt.h	/^    EN_MNT_USB_QUERY,$/;"	e	enum:tagEN_MNT_USB_STATE
+EN_MNT_USB_REST	xl_mnt.h	/^    EN_MNT_USB_REST,$/;"	e	enum:tagEN_MNT_USB_STATE
+EN_MNT_USB_STATE	xl_mnt.h	/^}EN_MNT_USB_STATE;$/;"	t	typeref:enum:tagEN_MNT_USB_STATE
+EN_MNT_USB_TIMEOUT	xl_mnt.h	/^    EN_MNT_USB_TIMEOUT,$/;"	e	enum:tagEN_MNT_USB_STATE
+EN_MNT_USB_UNMOUNTED	xl_mnt.h	/^    EN_MNT_USB_UNMOUNTED$/;"	e	enum:tagEN_MNT_USB_STATE
+EN_USB_ADD	xl_mnt.h	/^	EN_USB_ADD,     \/*USB device plug in*\/$/;"	e	enum:tagEN_ACTION
+EN_USB_CHG	xl_mnt.h	/^	EN_USB_CHG,         \/*USB device change state*\/$/;"	e	enum:tagEN_ACTION
+EN_USB_DETECT_END	xl_usb_device.c	/^	EN_USB_DETECT_END$/;"	e	enum:tagEN_USB_DETECT_STATE	file:
+EN_USB_DETECT_STATE	xl_usb_device.c	/^}EN_USB_DETECT_STATE;$/;"	t	typeref:enum:tagEN_USB_DETECT_STATE	file:
+EN_USB_DEVICE_END	xl_mnt.h	/^	EN_USB_DEVICE_END$/;"	e	enum:tagEN_DEVICE_TYPE
+EN_USB_DEVICE_STORAGE	xl_mnt.h	/^	EN_USB_DEVICE_STORAGE = 0,  \/*USB storage device*\/$/;"	e	enum:tagEN_DEVICE_TYPE
+EN_USB_DEVICE_UNKNOW	xl_mnt.h	/^	EN_USB_DEVICE_UNKNOW,       \/*USB ,other type *\/$/;"	e	enum:tagEN_DEVICE_TYPE
+EN_USB_END	xl_mnt.h	/^	EN_USB_END$/;"	e	enum:tagEN_ACTION
+EN_USB_GET_ACTION	xl_usb_device.c	/^	EN_USB_GET_ACTION =1,$/;"	e	enum:tagEN_USB_DETECT_STATE	file:
+EN_USB_GET_DEV_NAME	xl_usb_device.c	/^	EN_USB_GET_DEV_NAME,$/;"	e	enum:tagEN_USB_DETECT_STATE	file:
+EN_USB_IDENTIFY_DEVICE	xl_usb_device.c	/^	EN_USB_IDENTIFY_DEVICE,$/;"	e	enum:tagEN_USB_DETECT_STATE	file:
+EN_USB_RM	xl_mnt.h	/^	EN_USB_RM = 0,          \/*USB device plug out*\/$/;"	e	enum:tagEN_ACTION
+EN_USB_STANDBY	xl_usb_device.c	/^	EN_USB_STANDBY = 0,$/;"	e	enum:tagEN_USB_DETECT_STATE	file:
+EXT2_SUPER_MAGIC	xl_usb_mng.c	37;"	d	file:
+EXT3_SUPER_MAGIC	xl_usb_mng.c	38;"	d	file:
+EXT3_VOLUME_OFFSET	xl_usb_mng.c	1029;"	d	file:
+FAT32_LABEL_LOG	xl_usb_mng.c	1094;"	d	file:
+FAT32_VOLUME_UNIX_OFFSET	xl_usb_mng.c	1061;"	d	file:
+FAT32_VOLUME_WIN_OFFSET	xl_usb_mng.c	1060;"	d	file:
+GREEN_LED	led_test.c	30;"	d	file:
+INCLUDE_DIRS	Makefile	/^INCLUDE_DIRS = $(ROOT)\/include \\$/;"	m
+INVALID_VOLUME	xl_usb_mng.c	1062;"	d	file:
+JFFS2_SUPER_MAGIC	xl_usb_mng.c	39;"	d	file:
+LIB_DYNAMIC	Makefile	/^LIB_DYNAMIC =$/;"	m
+LIB_STATIC	Makefile	/^LIB_STATIC =$/;"	m
+LINK_LIBS	Makefile	/^LINK_LIBS = pthread  $/;"	m
+MAX_NO_PACKETS	ping.c	16;"	d	file:
+MAX_WAIT_TIME	ping.c	15;"	d	file:
+MNT_USB_MOUNT_FILE	xl_usb_mng.c	35;"	d	file:
+MOUNT_FILE	xl_usb_mng.c	33;"	d	file:
+MOUNT_LOG_FILE	xl_usb_mng.c	34;"	d	file:
+MSDOS_SUPER_MAGIC	xl_usb_mng.c	40;"	d	file:
+MSG_TYPE	xl_mnt_msg_process.c	20;"	d	file:
+NTFS_LABEL_LOG	xl_usb_mng.c	1144;"	d	file:
+NTFS_MAGIC	xl_usb_mng.c	44;"	d	file:
+NTFS_SB_MAGIC	xl_usb_mng.c	41;"	d	file:
+PACKET_SIZE	ping.c	14;"	d	file:
+RED_LED	led_test.c	29;"	d	file:
+STDOUT	xl_usb_mng.c	36;"	d	file:
+St_mnt_netlink_dev	xl_mnt_mng.h	/^}St_mnt_netlink_dev;$/;"	t	typeref:struct:tagSt_mnt_netlink_dev
+St_usb_query_thread	xl_usb_mng.c	/^}St_usb_query_thread;$/;"	t	typeref:struct:tagSt_usb_query_thread	file:
+St_xl_USBDisk_info	xl_mnt.h	/^}St_xl_USBDisk_info;$/;"	t	typeref:struct:tagSt_xl_USBDisk_info
+St_xl_USB_Dev	xl_usb_device.c	/^}St_xl_USB_Dev;$/;"	t	typeref:struct:tagSt_xl_USB_Dev	file:
+St_xl_USB_Info	xl_mnt.h	/^}St_xl_USB_Info;$/;"	t	typeref:struct:tagSt_xl_USB_Info
+St_xl_USB_Part	xl_usb_mng.c	/^}St_xl_USB_Part;$/;"	t	typeref:struct:tagSt_xl_USB_Part	file:
+St_xl_partition_info	xl_mnt.h	/^}St_xl_partition_info;$/;"	t	typeref:struct:tagSt_xl_partition_info
+St_xl_storage_info	xl_mnt.h	/^}St_xl_storage_info;$/;"	t	typeref:struct:tagSt_xl_storage_info
+TFun	test.c	/^typedef int TFun(void);$/;"	t	file:
+UBIFS_SUPER_MAGIC	xl_usb_mng.c	42;"	d	file:
+UEVENT_BUFFER_SIZE	xl_usb_device.c	18;"	d	file:
+USB_DEV_NAME	xl_usb_device.c	19;"	d	file:
+XL_ERRNO_BASEID_MNT	xl_mnt.h	79;"	d
+YAFFS_MAGIC	xl_usb_mng.c	43;"	d	file:
+_MODULE_TEST_H_	module_test.h	2;"	d
+_XL_MNT_COMMAND_H_	xl_mnt_command.h	2;"	d
+_XL_MNT_H_	xl_mnt.h	2;"	d
+_XL_MNT_LED_H_	xl_mnt_led.h	15;"	d
+_XL_MNT_MSG_H_	xl_mnt_mng.h	2;"	d
+_XL_MNT_MSG_PROCESS_H_	xl_mnt_msg_process.h	2;"	d
+_XL_MNT_USB_H_	xl_mnt_usb.h	2;"	d
+action	xl_usb_device.c	/^    const char *action;$/;"	m	struct:luther_gliethttp	file:	access:public
+all_module_test	test.c	/^int all_module_test(void)$/;"	f	signature:(void)
+all_module_test	test.c	/^int all_module_test(void);$/;"	p	file:	signature:(void)
+bInit	xl_usb_mng.c	/^static BOOL bInit = FALSE;$/;"	v	file:
+bMounted	xl_mnt.h	/^    BOOL bMounted;                \/*0:mounted,1:unmounted*\/$/;"	m	struct:tagSt_xl_partition_info	access:public
+bool	led_test.c	/^typedef unsigned int bool;$/;"	t	file:
+cal_chksum	ping.c	/^unsigned short cal_chksum(unsigned short *addr,int len)$/;"	f	signature:(unsigned short *addr,int len)
+cal_chksum	ping.c	/^unsigned short cal_chksum(unsigned short *addr,int len);$/;"	p	file:	signature:(unsigned short *addr,int len)
+datalen	ping.c	/^int sockfd,datalen=1480;$/;"	v
+dest_addr	ping.c	/^struct sockaddr_in dest_addr;$/;"	v	typeref:struct:sockaddr_in
+detect_stat	xl_usb_mng.c	/^    EN_MNT_USB_STATE detect_stat;$/;"	m	struct:tagSt_usb_query_thread	file:	access:public
+dev_name	xl_mnt_mng.h	/^    char dev_name[16];$/;"	m	struct:tagSt_mnt_netlink_dev	access:public
+device_get_ip	module_test.h	/^int device_get_ip(char * , char *);$/;"	p	signature:(char * , char *)
+device_get_ip	xl_mnt_mng.c	/^EN_ERROR_NUM device_get_ip(char* ip,const char *pEthName)$/;"	f	signature:(char* ip,const char *pEthName)
+devname	xl_usb_device.c	/^    const char *devname;$/;"	m	struct:luther_gliethttp	file:	access:public
+do_read_sdcard_all	xl_mnt_mng.c	/^void do_read_sdcard_all(void)$/;"	f	signature:(void)
+do_read_sdcard_once	xl_mnt_mng.c	/^void do_read_sdcard_once(void)$/;"	f	signature:(void)
+do_read_usb_all	xl_mnt_mng.c	/^void do_read_usb_all(void)$/;"	f	signature:(void)
+do_read_usb_once	xl_mnt_mng.c	/^void do_read_usb_once(void)$/;"	f	signature:(void)
+do_write_sdcard_all	xl_mnt_mng.c	/^void do_write_sdcard_all(void)$/;"	f	signature:(void)
+do_write_sdcard_once	xl_mnt_mng.c	/^void do_write_sdcard_once(void)$/;"	f	signature:(void)
+do_write_usb_all	xl_mnt_mng.c	/^void do_write_usb_all(void)$/;"	f	signature:(void)
+do_write_usb_once	xl_mnt_mng.c	/^void do_write_usb_once(void)$/;"	f	signature:(void)
+eAction	xl_mnt.h	/^	EN_ACTION eAction;            \/* Action:0 plugin ,1:plugout*\/$/;"	m	struct:tagSt_xl_USB_Info	access:public
+eType	xl_mnt.h	/^	EN_DEVICE_TYPE  eType;        \/*Type:0 Storage device,1:other device*\/$/;"	m	struct:tagSt_xl_USB_Info	access:public
+ethwork_start_run	module_test.h	/^void ethwork_start_run(void);$/;"	p	signature:(void)
+ethwork_start_run	ping.c	/^void ethwork_start_run()$/;"	f
+ethwork_stop_run	module_test.h	/^void ethwork_stop_run(void);$/;"	p	signature:(void)
+ethwork_stop_run	ping.c	/^void ethwork_stop_run()$/;"	f
+ext3_get_label	xl_usb_mng.c	/^static EN_ERROR_NUM ext3_get_label(const char *szPartName,char *szVolume)$/;"	f	file:	signature:(const char *szPartName,char *szVolume)
+ext3_get_label	xl_usb_mng.c	/^static EN_ERROR_NUM ext3_get_label(const char *szPartName,char *szVolume);$/;"	p	file:	signature:(const char *szPartName,char *szVolume)
+false	led_test.c	18;"	d	file:
+fat32_get_label	xl_usb_mng.c	/^static EN_ERROR_NUM fat32_get_label(const char *szPartName,char *szVolume)$/;"	f	file:	signature:(const char *szPartName,char *szVolume)
+fat32_get_label	xl_usb_mng.c	/^static EN_ERROR_NUM fat32_get_label(const char *szPartName,char *szVolume);$/;"	p	file:	signature:(const char *szPartName,char *szVolume)
+firmware	xl_usb_device.c	/^    const char *firmware;$/;"	m	struct:luther_gliethttp	file:	access:public
+from	ping.c	/^struct sockaddr_in from;$/;"	v	typeref:struct:sockaddr_in
+g_DevID	xl_usb_device.c	/^static char g_DevID[128] = {0};$/;"	v	file:
+g_module	test.c	/^module_test g_module[] = {$/;"	v
+g_psUSBDevHead	xl_usb_device.c	/^St_xl_USB_Dev * g_psUSBDevHead = NULL;$/;"	v
+get_file_size	xl_usb_mng.c	/^static unsigned long get_file_size(const char *path)$/;"	f	file:	signature:(const char *path)
+get_file_size	xl_usb_mng.c	/^static unsigned long get_file_size(const char *path);$/;"	p	file:	signature:(const char *path)
+get_gateway	ping.c	/^static void get_gateway(char *gateway)$/;"	f	file:	signature:(char *gateway)
+gpio_direction	led_test.c	/^void gpio_direction(unsigned int gpio, bool direction)$/;"	f	signature:(unsigned int gpio, bool direction)
+gpio_export	led_test.c	/^void gpio_export(unsigned int gpio)$/;"	f	signature:(unsigned int gpio)
+gpio_set	led_test.c	/^void gpio_set(unsigned int gpio, bool direction, bool high)$/;"	f	signature:(unsigned int gpio, bool direction, bool high)
+gpio_value	led_test.c	/^void gpio_value(unsigned int gpio, bool high)$/;"	f	signature:(unsigned int gpio, bool high)
+init_hotplug_sock	xl_usb_device.c	/^static int init_hotplug_sock(void)$/;"	f	file:	signature:(void)
+int32_t	test.c	/^typedef int int32_t;$/;"	t	file:
+led_module_test	led_test.c	/^int led_module_test(void)$/;"	f	signature:(void)
+led_module_test	module_test.h	/^int led_module_test(void);$/;"	p	signature:(void)
+led_module_test	test.c	/^extern int led_module_test(void);$/;"	p	file:	signature:(void)
+led_start_run	led_test.c	/^void led_start_run(void)$/;"	f	signature:(void)
+led_start_run	module_test.h	/^void led_start_run(void);$/;"	p	signature:(void)
+led_stop_run	led_test.c	/^void led_stop_run(void)$/;"	f	signature:(void)
+led_stop_run	module_test.h	/^void led_stop_run(void);$/;"	p	signature:(void)
+led_test_thread	led_test.c	/^void * led_test_thread(void)$/;"	f	signature:(void)
+led_thread_disable	led_test.c	/^static int led_thread_disable = 0;$/;"	v	file:
+led_tid	led_test.c	/^pthread_t led_tid = 0;$/;"	v
+long_options	test.c	/^const struct option long_options[] = {$/;"	v	typeref:struct:option
+luther_gliethttp	xl_usb_device.c	/^struct luther_gliethttp {$/;"	s	file:
+luther_gliethttp::action	xl_usb_device.c	/^    const char *action;$/;"	m	struct:luther_gliethttp	file:	access:public
+luther_gliethttp::devname	xl_usb_device.c	/^    const char *devname;$/;"	m	struct:luther_gliethttp	file:	access:public
+luther_gliethttp::firmware	xl_usb_device.c	/^    const char *firmware;$/;"	m	struct:luther_gliethttp	file:	access:public
+luther_gliethttp::major	xl_usb_device.c	/^    int major;$/;"	m	struct:luther_gliethttp	file:	access:public
+luther_gliethttp::minor	xl_usb_device.c	/^    int minor;$/;"	m	struct:luther_gliethttp	file:	access:public
+luther_gliethttp::path	xl_usb_device.c	/^    const char *path;$/;"	m	struct:luther_gliethttp	file:	access:public
+luther_gliethttp::physdevdriver	xl_usb_device.c	/^    const char * physdevdriver;$/;"	m	struct:luther_gliethttp	file:	access:public
+luther_gliethttp::product	xl_usb_device.c	/^    const char * product;$/;"	m	struct:luther_gliethttp	file:	access:public
+luther_gliethttp::subsystem	xl_usb_device.c	/^    const char *subsystem;$/;"	m	struct:luther_gliethttp	file:	access:public
+luther_gliethttp::type	xl_usb_device.c	/^    int type;$/;"	m	struct:luther_gliethttp	file:	access:public
+m_pNext	xl_usb_device.c	/^    void * m_pNext;$/;"	m	struct:tagSt_xl_USB_Dev	file:	access:public
+m_pNext	xl_usb_mng.c	/^    void * m_pNext;$/;"	m	struct:tagSt_xl_USB_Part	file:	access:public
+m_sStorageInfo	xl_usb_device.c	/^    St_xl_storage_info m_sStorageInfo;$/;"	m	struct:tagSt_xl_USB_Dev	file:	access:public
+m_sStorageInfo	xl_usb_mng.c	/^    St_xl_partition_info m_sStorageInfo;$/;"	m	struct:tagSt_xl_USB_Part	file:	access:public
+main	test.c	/^int32_t main(int32_t argc, char **argv) {$/;"	f	signature:(int32_t argc, char **argv)
+major	xl_usb_device.c	/^    int major;$/;"	m	struct:luther_gliethttp	file:	access:public
+memrchr	test.c	/^void * memrchr(const void *s,int c,size_t n);$/;"	p	file:	signature:(const void *s,int c,size_t n)
+message	xl_mnt_msg_process.c	/^struct message$/;"	s	file:
+message::msg_text	xl_mnt_msg_process.c	/^    char msg_text[BUFFER_SIZE];$/;"	m	struct:message	file:	access:public
+message::msg_type	xl_mnt_msg_process.c	/^    long msg_type;$/;"	m	struct:message	file:	access:public
+minor	xl_usb_device.c	/^    int minor;$/;"	m	struct:luther_gliethttp	file:	access:public
+mnt_led_reserve_status	xl_mnt_mng.h	/^void mnt_led_reserve_status(void);$/;"	p	signature:(void)
+mnt_led_set_status	led_test.c	/^int mnt_led_set_status(EN_LED_COLOR eColor)$/;"	f	signature:(EN_LED_COLOR eColor)
+mnt_led_set_status	xl_mnt_mng.h	/^int mnt_led_set_status(EN_LED_COLOR eColor);$/;"	p	signature:(EN_LED_COLOR eColor)
+mnt_main	xl_mnt_mng.c	/^static int mnt_main(void)$/;"	f	file:	signature:(void)
+mnt_main	xl_mnt_mng.c	/^static int mnt_main(void);$/;"	p	file:	signature:(void)
+mnt_msg_send_usb_state	xl_mnt_mng.h	/^EN_ERROR_NUM mnt_msg_send_usb_state(int nDiskId,EN_MNT_USB_STATE eState);$/;"	p	signature:(int nDiskId,EN_MNT_USB_STATE eState)
+mnt_msg_send_usbinfo_all	xl_mnt_mng.h	/^EN_ERROR_NUM mnt_msg_send_usbinfo_all(St_xl_USB_Info * psUSBInfo);$/;"	p	signature:(St_xl_USB_Info * psUSBInfo)
+mnt_reset_init	xl_mnt_usb.h	/^EN_ERROR_NUM mnt_reset_init(void);$/;"	p	signature:(void)
+mnt_reset_term	xl_mnt_usb.h	/^EN_ERROR_NUM mnt_reset_term(void);$/;"	p	signature:(void)
+mnt_sdcard_get_patition_count	xl_usb_mng.c	/^static U32 mnt_sdcard_get_patition_count(U32 nUSBDiskID)$/;"	f	file:	signature:(U32 nUSBDiskID)
+mnt_sdcard_get_patition_count	xl_usb_mng.c	/^static U32 mnt_sdcard_get_patition_count(U32 nUSBDiskID);$/;"	p	file:	signature:(U32 nUSBDiskID)
+mnt_sdcard_init_data	xl_mnt_mng.c	/^int mnt_sdcard_init_data(void)$/;"	f	signature:(void)
+mnt_sdcard_read_partition	xl_mnt_mng.h	/^EN_ERROR_NUM mnt_sdcard_read_partition(U32 nUSBDiskID,U32 *pnCnt,St_xl_partition_info **pDestData);$/;"	p	signature:(U32 nUSBDiskID,U32 *pnCnt,St_xl_partition_info **pDestData)
+mnt_sdcard_read_partition	xl_usb_mng.c	/^EN_ERROR_NUM mnt_sdcard_read_partition(U32 nUSBDiskID,U32 *pnCnt,St_xl_partition_info **pDestData)$/;"	f	signature:(U32 nUSBDiskID,U32 *pnCnt,St_xl_partition_info **pDestData)
+mnt_sdcard_read_partition_from_list	xl_usb_mng.c	/^static EN_ERROR_NUM mnt_sdcard_read_partition_from_list(St_xl_partition_info *psPartitionInfo,U32 nUSBDiskID,U32 nPartCnt)$/;"	f	file:	signature:(St_xl_partition_info *psPartitionInfo,U32 nUSBDiskID,U32 nPartCnt)
+mnt_sdcard_read_partition_from_list	xl_usb_mng.c	/^static EN_ERROR_NUM mnt_sdcard_read_partition_from_list(St_xl_partition_info *psPartitionInfo,U32 nUSBDiskID,U32 nPartCnt);$/;"	p	file:	signature:(St_xl_partition_info *psPartitionInfo,U32 nUSBDiskID,U32 nPartCnt)
+mnt_sdcard_term_data	xl_mnt_mng.c	/^int mnt_sdcard_term_data(void)$/;"	f	signature:(void)
+mnt_sys_init	xl_mnt_mng.h	/^int mnt_sys_init();$/;"	p	signature:()
+mnt_sysload_init	xl_mnt_usb.h	/^int mnt_sysload_init();$/;"	p	signature:()
+mnt_sysload_term	xl_mnt_usb.h	/^int mnt_sysload_term();$/;"	p	signature:()
+mnt_ubus_main	xl_mnt_mng.h	/^int mnt_ubus_main();$/;"	p	signature:()
+mnt_ubus_mine_func_notify	xl_mnt_mng.h	/^int mnt_ubus_mine_func_notify(char * data);$/;"	p	signature:(char * data)
+mnt_ubus_netlink_plug_notify	xl_mnt_mng.h	/^int mnt_ubus_netlink_plug_notify(void *data);$/;"	p	signature:(void *data)
+mnt_ubus_usb_plug_notify	xl_mnt_mng.c	/^int mnt_ubus_usb_plug_notify(void)$/;"	f	signature:(void)
+mnt_ubus_usb_plug_notify	xl_mnt_mng.h	/^int mnt_ubus_usb_plug_notify();$/;"	p	signature:()
+mnt_usb_check_disk_id	xl_mnt_mng.h	/^EN_ERROR_NUM mnt_usb_check_disk_id(U32 nUSBDiskID);$/;"	p	signature:(U32 nUSBDiskID)
+mnt_usb_check_disk_id	xl_usb_device.c	/^EN_ERROR_NUM mnt_usb_check_disk_id(U32 nUSBDiskID)$/;"	f	signature:(U32 nUSBDiskID)
+mnt_usb_create_disk_id	xl_usb_device.c	/^static int mnt_usb_create_disk_id(void)$/;"	f	file:	signature:(void)
+mnt_usb_create_mount_log	xl_usb_mng.c	/^static EN_ERROR_NUM mnt_usb_create_mount_log(char *szDiskName,int nDiskId)$/;"	f	file:	signature:(char *szDiskName,int nDiskId)
+mnt_usb_create_mount_log	xl_usb_mng.c	/^static EN_ERROR_NUM mnt_usb_create_mount_log(char *szDiskName,int nDiskId);$/;"	p	file:	signature:(char *szDiskName,int nDiskId)
+mnt_usb_delete_dev_node	xl_usb_device.c	/^static EN_ERROR_NUM mnt_usb_delete_dev_node(St_xl_storage_info * psUSBInfo);$/;"	p	file:	signature:(St_xl_storage_info * psUSBInfo)
+mnt_usb_delete_dev_node	xl_usb_device.c	/^static EN_ERROR_NUM mnt_usb_delete_dev_node(St_xl_storage_info *psStorageInfo)$/;"	f	file:	signature:(St_xl_storage_info *psStorageInfo)
+mnt_usb_delete_partitions_from_list	xl_usb_mng.c	/^static EN_ERROR_NUM mnt_usb_delete_partitions_from_list(U32 nUSBDiskID)$/;"	f	file:	signature:(U32 nUSBDiskID)
+mnt_usb_destroy_disk_id	xl_usb_device.c	/^static void  mnt_usb_destroy_disk_id(int nDevId)$/;"	f	file:	signature:(int nDevId)
+mnt_usb_detect_partition	xl_usb_mng.c	/^static EN_ERROR_NUM mnt_usb_detect_partition(U32 nDiskID)$/;"	f	file:	signature:(U32 nDiskID)
+mnt_usb_detect_partition	xl_usb_mng.c	/^static EN_ERROR_NUM mnt_usb_detect_partition(U32 nDiskID);$/;"	p	file:	signature:(U32 nDiskID)
+mnt_usb_detect_thread	xl_mnt_usb.h	/^void * mnt_usb_detect_thread(void);$/;"	p	signature:(void)
+mnt_usb_detect_thread	xl_usb_device.c	/^void * mnt_usb_detect_thread(void)$/;"	f	signature:(void)
+mnt_usb_device_probe	xl_mnt_usb.h	/^int mnt_usb_device_probe(void);$/;"	p	signature:(void)
+mnt_usb_device_probe	xl_usb_device.c	/^int mnt_usb_device_probe(void)$/;"	f	signature:(void)
+mnt_usb_get_action	xl_usb_device.c	/^static EN_ERROR_NUM mnt_usb_get_action (struct luther_gliethttp *luther_gliethttp,EN_ACTION * action)$/;"	f	file:	signature:(struct luther_gliethttp *luther_gliethttp,EN_ACTION * action)
+mnt_usb_get_action	xl_usb_device.c	/^static EN_ERROR_NUM mnt_usb_get_action (struct luther_gliethttp *luther_gliethttp,EN_ACTION * action);$/;"	p	file:	signature:(struct luther_gliethttp *luther_gliethttp,EN_ACTION * action)
+mnt_usb_get_disk_name	xl_mnt_mng.h	/^EN_ERROR_NUM mnt_usb_get_disk_name(U32 nUSBDiskID,char * szDiskName);$/;"	p	signature:(U32 nUSBDiskID,char * szDiskName)
+mnt_usb_get_disk_name	xl_usb_device.c	/^EN_ERROR_NUM mnt_usb_get_disk_name(U32 nUSBDiskID,char * szDiskName)$/;"	f	signature:(U32 nUSBDiskID,char * szDiskName)
+mnt_usb_get_label	xl_usb_mng.c	/^static EN_ERROR_NUM mnt_usb_get_label(char *szDir,const char *szPartName,char *szVolume)$/;"	f	file:	signature:(char *szDir,const char *szPartName,char *szVolume)
+mnt_usb_get_label	xl_usb_mng.c	/^static EN_ERROR_NUM mnt_usb_get_label(char *szDir,const char *szPartName,char *szVolume);$/;"	p	file:	signature:(char *szDir,const char *szPartName,char *szVolume)
+mnt_usb_get_mount_path	xl_usb_mng.c	/^static EN_ERROR_NUM mnt_usb_get_mount_path(char * szDevName,char *szPartName,char *szMountDir,int * nMapIndex)$/;"	f	file:	signature:(char * szDevName,char *szPartName,char *szMountDir,int * nMapIndex)
+mnt_usb_get_mount_path	xl_usb_mng.c	/^static EN_ERROR_NUM mnt_usb_get_mount_path(char* szDevName,char *szPartName,char *szMountDir,int *nMapIndex);$/;"	p	file:	signature:(char* szDevName,char *szPartName,char *szMountDir,int *nMapIndex)
+mnt_usb_get_partition_cnt	xl_usb_mng.c	/^static int mnt_usb_get_partition_cnt(char * dev_name,int * nMaxPartIndex);$/;"	p	file:	signature:(char * dev_name,int * nMaxPartIndex)
+mnt_usb_get_partition_cnt	xl_usb_mng.c	/^static int mnt_usb_get_partition_cnt(char * dev_name,int * pMaxPartIndex)$/;"	f	file:	signature:(char * dev_name,int * pMaxPartIndex)
+mnt_usb_get_patition_count	xl_usb_mng.c	/^static U32 mnt_usb_get_patition_count(U32 nUSBDiskID)$/;"	f	file:	signature:(U32 nUSBDiskID)
+mnt_usb_get_patition_count	xl_usb_mng.c	/^static U32 mnt_usb_get_patition_count(U32 nUSBDiskID);$/;"	p	file:	signature:(U32 nUSBDiskID)
+mnt_usb_init	xl_mnt_usb.h	/^EN_ERROR_NUM mnt_usb_init(void);$/;"	p	signature:(void)
+mnt_usb_init	xl_usb_mng.c	/^EN_ERROR_NUM mnt_usb_init(void)$/;"	f	signature:(void)
+mnt_usb_init_data	xl_mnt_mng.c	/^int mnt_usb_init_data(void)$/;"	f	signature:(void)
+mnt_usb_init_device_sem	xl_mnt_usb.h	/^void mnt_usb_init_device_sem(void);$/;"	p	signature:(void)
+mnt_usb_insert_dev_node	xl_usb_device.c	/^static EN_ERROR_NUM mnt_usb_insert_dev_node(St_xl_storage_info * psStorageInfo)$/;"	f	file:	signature:(St_xl_storage_info * psStorageInfo)
+mnt_usb_insert_dev_node	xl_usb_device.c	/^static EN_ERROR_NUM mnt_usb_insert_dev_node(St_xl_storage_info * psUSBInfo);$/;"	p	file:	signature:(St_xl_storage_info * psUSBInfo)
+mnt_usb_insert_partition_list	xl_usb_mng.c	/^static EN_ERROR_NUM mnt_usb_insert_partition_list(St_xl_partition_info *psPartition,int nCnt)$/;"	f	file:	signature:(St_xl_partition_info *psPartition,int nCnt)
+mnt_usb_insert_partition_list	xl_usb_mng.c	/^static EN_ERROR_NUM mnt_usb_insert_partition_list(St_xl_partition_info *psPartition,int nCnt);$/;"	p	file:	signature:(St_xl_partition_info *psPartition,int nCnt)
+mnt_usb_msg_init	xl_mnt_mng.h	/^int mnt_usb_msg_init(void);$/;"	p	signature:(void)
+mnt_usb_msg_init	xl_mnt_msg_process.c	/^int mnt_usb_msg_init(void)$/;"	f	signature:(void)
+mnt_usb_msg_rcv	xl_mnt_mng.h	/^EN_ERROR_NUM mnt_usb_msg_rcv(char *pData,int *pnLen);$/;"	p	signature:(char *pData,int *pnLen)
+mnt_usb_msg_rcv	xl_mnt_msg_process.c	/^EN_ERROR_NUM mnt_usb_msg_rcv(char *pData,int *pnLen)$/;"	f	signature:(char *pData,int *pnLen)
+mnt_usb_msg_send	xl_mnt_mng.h	/^EN_ERROR_NUM mnt_usb_msg_send(char *pData,int nLen);$/;"	p	signature:(char *pData,int nLen)
+mnt_usb_msg_send	xl_mnt_msg_process.c	/^EN_ERROR_NUM mnt_usb_msg_send(char *pData,int nLen)$/;"	f	signature:(char *pData,int nLen)
+mnt_usb_probe_device_thread	xl_usb_device.c	/^static void * mnt_usb_probe_device_thread(void * tid)$/;"	f	file:	signature:(void * tid)
+mnt_usb_probe_partition_thread	xl_usb_mng.c	/^static void * mnt_usb_probe_partition_thread(void)$/;"	f	file:	signature:(void)
+mnt_usb_probe_partition_thread	xl_usb_mng.c	/^static void * mnt_usb_probe_partition_thread(void);$/;"	p	file:	signature:(void)
+mnt_usb_query_mount_log_thread	xl_usb_mng.c	/^static void * mnt_usb_query_mount_log_thread (void * pUSBInfo)$/;"	f	file:	signature:(void * pUSBInfo)
+mnt_usb_query_mount_log_thread	xl_usb_mng.c	/^static void * mnt_usb_query_mount_log_thread (void * pUSBInfo);$/;"	p	file:	signature:(void * pUSBInfo)
+mnt_usb_read_partition	xl_mnt_mng.h	/^EN_ERROR_NUM mnt_usb_read_partition(U32 nUSBDiskID,U32 *pnCnt,St_xl_partition_info **pDestData);$/;"	p	signature:(U32 nUSBDiskID,U32 *pnCnt,St_xl_partition_info **pDestData)
+mnt_usb_read_partition	xl_usb_mng.c	/^EN_ERROR_NUM mnt_usb_read_partition(U32 nUSBDiskID,U32 *pnCnt,St_xl_partition_info **pDestData)$/;"	f	signature:(U32 nUSBDiskID,U32 *pnCnt,St_xl_partition_info **pDestData)
+mnt_usb_read_partition_from_list	xl_usb_mng.c	/^static EN_ERROR_NUM mnt_usb_read_partition_from_list(St_xl_partition_info *psPartitionInfo,U32 nUSBDiskID,U32 nPartCnt)$/;"	f	file:	signature:(St_xl_partition_info *psPartitionInfo,U32 nUSBDiskID,U32 nPartCnt)
+mnt_usb_read_partition_from_list	xl_usb_mng.c	/^static EN_ERROR_NUM mnt_usb_read_partition_from_list(St_xl_partition_info *psPartitionInfo,U32 nUSBDiskID,U32 nPartCnt);$/;"	p	file:	signature:(St_xl_partition_info *psPartitionInfo,U32 nUSBDiskID,U32 nPartCnt)
+mnt_usb_read_partition_space	xl_mnt_mng.h	/^EN_ERROR_NUM mnt_usb_read_partition_space(char * szDir,S64 *pu64Total,S64 *pu64Used);$/;"	p	signature:(char * szDir,S64 *pu64Total,S64 *pu64Used)
+mnt_usb_read_partition_space	xl_usb_mng.c	/^EN_ERROR_NUM mnt_usb_read_partition_space(char *szDir,S64 *pu64Total,S64 *pu64Used)$/;"	f	signature:(char *szDir,S64 *pu64Total,S64 *pu64Used)
+mnt_usb_remove_dev_node	xl_usb_device.c	/^static EN_ERROR_NUM  mnt_usb_remove_dev_node(void)$/;"	f	file:	signature:(void)
+mnt_usb_remove_dev_node	xl_usb_device.c	/^static EN_ERROR_NUM  mnt_usb_remove_dev_node(void);$/;"	p	file:	signature:(void)
+mnt_usb_send_partition	xl_usb_mng.c	/^EN_ERROR_NUM mnt_usb_send_partition(int nFrom,int nTo,int nSerial,int nDiskId);$/;"	p	file:	signature:(int nFrom,int nTo,int nSerial,int nDiskId)
+mnt_usb_send_partition_all	xl_usb_mng.c	/^EN_ERROR_NUM mnt_usb_send_partition_all(void);$/;"	p	file:	signature:(void)
+mnt_usb_term	xl_mnt_usb.h	/^EN_ERROR_NUM mnt_usb_term(void);$/;"	p	signature:(void)
+mnt_usb_term	xl_usb_mng.c	/^EN_ERROR_NUM mnt_usb_term(void)$/;"	f	signature:(void)
+mnt_usb_term_data	xl_mnt_mng.c	/^int mnt_usb_term_data(void)$/;"	f	signature:(void)
+mnt_usb_unmount_disk	xl_usb_mng.c	/^EN_ERROR_NUM mnt_usb_unmount_disk(U32 nUSBDiskID);$/;"	p	file:	signature:(U32 nUSBDiskID)
+module_name	test.c	/^    char * module_name;$/;"	m	struct:tagmodule_test	file:	access:public
+module_test	test.c	/^}module_test;$/;"	t	typeref:struct:tagmodule_test	file:
+msg_text	xl_mnt_msg_process.c	/^    char msg_text[BUFFER_SIZE];$/;"	m	struct:message	file:	access:public
+msg_type	xl_mnt_msg_process.c	/^    long msg_type;$/;"	m	struct:message	file:	access:public
+nDiskId	xl_mnt.h	/^	U32 nDiskId;                  \/*USB Disk ID ,Create by mnt,0~127*\/$/;"	m	struct:tagSt_xl_storage_info	access:public
+nDiskId	xl_mnt.h	/^ 	U32 nDiskId;                  \/*USB Disk ID*\/$/;"	m	struct:tagSt_xl_USB_Info	access:public
+nMapIndex	xl_mnt.h	/^    U32  nMapIndex;               \/*The map index based on 'C'*\/$/;"	m	struct:tagSt_xl_partition_info	access:public
+nPartitionCnt	xl_mnt.h	/^    U32 nPartitionCnt;$/;"	m	struct:tagSt_xl_USBDisk_info	access:public
+nPatitionId	xl_mnt.h	/^    U32  nPatitionId;             \/* Partition ID*\/$/;"	m	struct:tagSt_xl_partition_info	access:public
+nRunState	xl_usb_mng.c	/^    int nRunState;$/;"	m	struct:tagSt_usb_query_thread	file:	access:public
+nUSBDiskId	xl_mnt.h	/^    U32  nUSBDiskId;              \/* USB Disk ID*\/$/;"	m	struct:tagSt_xl_partition_info	access:public
+nUSBDiskId	xl_mnt.h	/^    U32 nUSBDiskId;$/;"	m	struct:tagSt_xl_USBDisk_info	access:public
+net_detect	module_test.h	/^int net_detect(char *);$/;"	p	signature:(char *)
+net_detect	xl_mnt_mng.c	/^int net_detect(char* net_name)$/;"	f	signature:(char* net_name)
+nreceived	ping.c	/^int nsend=0,nreceived=0;$/;"	v
+nsend	ping.c	/^int nsend=0,nreceived=0;$/;"	v
+ntfs3g_getlabel	xl_usb_mng.c	/^extern int ntfs3g_getlabel(const char *szDevName,char *szVolume);$/;"	p	file:	signature:(const char *szDevName,char *szVolume)
+ntfs_get_label	xl_usb_mng.c	/^static EN_ERROR_NUM ntfs_get_label(const char *szPartName,char *szVolume)$/;"	f	file:	signature:(const char *szPartName,char *szVolume)
+ntfs_get_label	xl_usb_mng.c	/^static EN_ERROR_NUM ntfs_get_label(const char *szPartName,char *szVolume);$/;"	p	file:	signature:(const char *szPartName,char *szVolume)
+pDestData	xl_mnt_mng.c	/^static St_xl_partition_info *pDestData = NULL;$/;"	v	file:
+pSDDestData	xl_mnt_mng.c	/^static St_xl_partition_info *pSDDestData = NULL;$/;"	v	file:
+pUsbInfo	xl_usb_mng.c	/^    St_xl_USB_Info * pUsbInfo;$/;"	m	struct:tagSt_usb_query_thread	file:	access:public
+pack	ping.c	/^int pack(int pack_no)$/;"	f	signature:(int pack_no)
+pack	ping.c	/^int pack(int pack_no);$/;"	p	file:	signature:(int pack_no)
+parse_event	xl_usb_device.c	/^static void parse_event(const char *msg, struct luther_gliethttp *luther_gliethttp)$/;"	f	file:	signature:(const char *msg, struct luther_gliethttp *luther_gliethttp)
+parse_event	xl_usb_device.c	/^static void parse_event(const char *msg, struct luther_gliethttp *luther_gliethttp);$/;"	p	file:	signature:(const char *msg, struct luther_gliethttp *luther_gliethttp)
+parsing_mount_log	xl_usb_mng.c	/^static EN_ERROR_NUM parsing_mount_log(char *buf,char *szPartName,char *szMountDir)$/;"	f	file:	signature:(char *buf,char *szPartName,char *szMountDir)
+parsing_mount_log	xl_usb_mng.c	/^static EN_ERROR_NUM parsing_mount_log(char *buf,char *szPartName,char *szMountDir);$/;"	p	file:	signature:(char *buf,char *szPartName,char *szMountDir)
+path	xl_usb_device.c	/^    const char *path;$/;"	m	struct:luther_gliethttp	file:	access:public
+physdevdriver	xl_usb_device.c	/^    const char * physdevdriver;$/;"	m	struct:luther_gliethttp	file:	access:public
+pid	ping.c	/^pid_t pid;$/;"	v
+ping	ping.c	/^int ping(char * hostname)$/;"	f	signature:(char * hostname)
+ping_thread	ping.c	/^void * ping_thread(void)$/;"	f	signature:(void)
+ping_thread_disable	ping.c	/^static int ping_thread_disable = 0;$/;"	v	file:
+ping_tid	ping.c	/^static pthread_t  ping_tid = 0;$/;"	v	file:
+print_sdcard_log	xl_mnt_mng.c	/^static void print_sdcard_log(void)$/;"	f	file:	signature:(void)
+print_usage	led_test.c	/^static void print_usage(FILE *stream)$/;"	f	file:	signature:(FILE *stream)
+print_usage	test.c	/^void print_usage(FILE *stream)$/;"	f	signature:(FILE *stream)
+print_usage	xl_mnt_mng.c	/^static void print_usage(FILE *stream)$/;"	f	file:	signature:(FILE *stream)
+print_usage_sdcard	xl_mnt_mng.c	/^static void print_usage_sdcard(FILE *stream)$/;"	f	file:	signature:(FILE *stream)
+print_usb_log	xl_mnt_mng.c	/^static void print_usb_log(void)$/;"	f	file:	signature:(void)
+product	xl_usb_device.c	/^    const char * product;$/;"	m	struct:luther_gliethttp	file:	access:public
+program_name	test.c	/^char * program_name = NULL;$/;"	v
+psPartitionHead	xl_mnt.h	/^    St_xl_partition_info * psPartitionHead;$/;"	m	struct:tagSt_xl_USBDisk_info	access:public
+read_sdcard_all_thread	xl_mnt_mng.c	/^static void * read_sdcard_all_thread(void)$/;"	f	file:	signature:(void)
+read_usb_all_thread	xl_mnt_mng.c	/^static void * read_usb_all_thread(void)$/;"	f	file:	signature:(void)
+recv_packet	ping.c	/^void recv_packet()$/;"	f
+recv_packet	ping.c	/^void recv_packet(void);$/;"	p	file:	signature:(void)
+recvpacket	ping.c	/^char recvpacket[PACKET_SIZE];$/;"	v
+s_UsbThread	xl_usb_mng.c	/^static St_usb_query_thread s_UsbThread[128];$/;"	v	file:
+s_psPartHead	xl_usb_mng.c	/^static St_xl_USB_Part *s_psPartHead;$/;"	v	file:
+s_qid	xl_mnt_msg_process.c	/^static int s_qid = 0;$/;"	v	file:
+s_tid	xl_usb_mng.c	/^static pthread_t s_tid[3] = {0};$/;"	v	file:
+sdcard_module_test	module_test.h	/^int sdcard_module_test(void);$/;"	p	signature:(void)
+sdcard_module_test	xl_mnt_mng.c	/^int sdcard_module_test(void)$/;"	f	signature:(void)
+sdcard_start_flag	xl_mnt_mng.c	/^static int sdcard_start_flag = 0;$/;"	v	file:
+sdcard_start_run	module_test.h	/^void sdcard_start_run(void);$/;"	p	signature:(void)
+sdcard_start_run	xl_mnt_mng.c	/^void sdcard_start_run()$/;"	f
+sdcard_stop_run	module_test.h	/^void sdcard_stop_run(void);$/;"	p	signature:(void)
+sdcard_stop_run	xl_mnt_mng.c	/^void sdcard_stop_run()$/;"	f
+sdtid_r	xl_mnt_mng.c	/^static pthread_t sdtid_w = 0,sdtid_r = 0;$/;"	v	file:
+sdtid_r_break	xl_mnt_mng.c	/^static int sdtid_w_break=0,sdtid_r_break=0;$/;"	v	file:
+sdtid_w	xl_mnt_mng.c	/^static pthread_t sdtid_w = 0,sdtid_r = 0;$/;"	v	file:
+sdtid_w_break	xl_mnt_mng.c	/^static int sdtid_w_break=0,sdtid_r_break=0;$/;"	v	file:
+send_packet	ping.c	/^void send_packet()$/;"	f
+send_packet	ping.c	/^void send_packet(void);$/;"	p	file:	signature:(void)
+sendpacket	ping.c	/^char sendpacket[PACKET_SIZE];$/;"	v
+sockfd	ping.c	/^int sockfd,datalen=1480;$/;"	v
+state	xl_mnt_mng.h	/^    int state;$/;"	m	struct:tagSt_mnt_netlink_dev	access:public
+statistics	ping.c	/^void statistics(int signo)$/;"	f	signature:(int signo)
+statistics	ping.c	/^void statistics(int signo);$/;"	p	file:	signature:(int signo)
+subsystem	xl_usb_device.c	/^    const char *subsystem;$/;"	m	struct:luther_gliethttp	file:	access:public
+szDiskName	xl_mnt.h	/^	char szDiskName[32];          \/*Device name of the USB Disk : can't delete it ,because we need the name to parse the kernel log*\/$/;"	m	struct:tagSt_xl_storage_info	access:public
+szMountDir	xl_mnt.h	/^    char  szMountDir[256];         \/*Mounted path*\/$/;"	m	struct:tagSt_xl_partition_info	access:public
+szPartName	xl_mnt.h	/^    char  szPartName[32];          \/*0:Partition name such as sda1*\/$/;"	m	struct:tagSt_xl_partition_info	access:public
+szVolume	xl_mnt.h	/^    char  szVolume[64];            \/*Volume name*\/$/;"	m	struct:tagSt_xl_partition_info	access:public
+tagEN_ACTION	xl_mnt.h	/^typedef enum tagEN_ACTION$/;"	g
+tagEN_DEVICE_TYPE	led_test.c	/^typedef enum tagEN_DEVICE_TYPE{$/;"	g	file:
+tagEN_DEVICE_TYPE	xl_mnt.h	/^typedef enum tagEN_DEVICE_TYPE$/;"	g
+tagEN_LED_COLOR	xl_mnt.h	/^typedef enum tagEN_LED_COLOR$/;"	g
+tagEN_MNT_ERRNO	xl_mnt.h	/^typedef enum tagEN_MNT_ERRNO$/;"	g
+tagEN_MNT_MODULE_ID	xl_mnt_command.h	/^typedef enum tagEN_MNT_MODULE_ID$/;"	g
+tagEN_MNT_USB_STATE	xl_mnt.h	/^typedef enum tagEN_MNT_USB_STATE$/;"	g
+tagEN_USB_DETECT_STATE	xl_usb_device.c	/^typedef enum tagEN_USB_DETECT_STATE$/;"	g	file:
+tagSt_mnt_netlink_dev	xl_mnt_mng.h	/^typedef struct tagSt_mnt_netlink_dev$/;"	s
+tagSt_mnt_netlink_dev::dev_name	xl_mnt_mng.h	/^    char dev_name[16];$/;"	m	struct:tagSt_mnt_netlink_dev	access:public
+tagSt_mnt_netlink_dev::state	xl_mnt_mng.h	/^    int state;$/;"	m	struct:tagSt_mnt_netlink_dev	access:public
+tagSt_usb_query_thread	xl_usb_mng.c	/^typedef struct tagSt_usb_query_thread$/;"	s	file:
+tagSt_usb_query_thread::detect_stat	xl_usb_mng.c	/^    EN_MNT_USB_STATE detect_stat;$/;"	m	struct:tagSt_usb_query_thread	file:	access:public
+tagSt_usb_query_thread::nRunState	xl_usb_mng.c	/^    int nRunState;$/;"	m	struct:tagSt_usb_query_thread	file:	access:public
+tagSt_usb_query_thread::pUsbInfo	xl_usb_mng.c	/^    St_xl_USB_Info * pUsbInfo;$/;"	m	struct:tagSt_usb_query_thread	file:	access:public
+tagSt_usb_query_thread::tid	xl_usb_mng.c	/^    pthread_t tid;$/;"	m	struct:tagSt_usb_query_thread	file:	access:public
+tagSt_xl_USBDisk_info	xl_mnt.h	/^typedef struct tagSt_xl_USBDisk_info$/;"	s
+tagSt_xl_USBDisk_info::nPartitionCnt	xl_mnt.h	/^    U32 nPartitionCnt;$/;"	m	struct:tagSt_xl_USBDisk_info	access:public
+tagSt_xl_USBDisk_info::nUSBDiskId	xl_mnt.h	/^    U32 nUSBDiskId;$/;"	m	struct:tagSt_xl_USBDisk_info	access:public
+tagSt_xl_USBDisk_info::psPartitionHead	xl_mnt.h	/^    St_xl_partition_info * psPartitionHead;$/;"	m	struct:tagSt_xl_USBDisk_info	access:public
+tagSt_xl_USB_Dev	xl_usb_device.c	/^typedef struct  tagSt_xl_USB_Dev$/;"	s	file:
+tagSt_xl_USB_Dev::m_pNext	xl_usb_device.c	/^    void * m_pNext;$/;"	m	struct:tagSt_xl_USB_Dev	file:	access:public
+tagSt_xl_USB_Dev::m_sStorageInfo	xl_usb_device.c	/^    St_xl_storage_info m_sStorageInfo;$/;"	m	struct:tagSt_xl_USB_Dev	file:	access:public
+tagSt_xl_USB_Info	xl_mnt.h	/^typedef struct tagSt_xl_USB_Info$/;"	s
+tagSt_xl_USB_Info::eAction	xl_mnt.h	/^	EN_ACTION eAction;            \/* Action:0 plugin ,1:plugout*\/$/;"	m	struct:tagSt_xl_USB_Info	access:public
+tagSt_xl_USB_Info::eType	xl_mnt.h	/^	EN_DEVICE_TYPE  eType;        \/*Type:0 Storage device,1:other device*\/$/;"	m	struct:tagSt_xl_USB_Info	access:public
+tagSt_xl_USB_Info::nDiskId	xl_mnt.h	/^ 	U32 nDiskId;                  \/*USB Disk ID*\/$/;"	m	struct:tagSt_xl_USB_Info	access:public
+tagSt_xl_USB_Part	xl_usb_mng.c	/^typedef struct  tagSt_xl_USB_Part$/;"	s	file:
+tagSt_xl_USB_Part::m_pNext	xl_usb_mng.c	/^    void * m_pNext;$/;"	m	struct:tagSt_xl_USB_Part	file:	access:public
+tagSt_xl_USB_Part::m_sStorageInfo	xl_usb_mng.c	/^    St_xl_partition_info m_sStorageInfo;$/;"	m	struct:tagSt_xl_USB_Part	file:	access:public
+tagSt_xl_partition_info	xl_mnt.h	/^typedef struct tagSt_xl_partition_info$/;"	s
+tagSt_xl_partition_info::bMounted	xl_mnt.h	/^    BOOL bMounted;                \/*0:mounted,1:unmounted*\/$/;"	m	struct:tagSt_xl_partition_info	access:public
+tagSt_xl_partition_info::nMapIndex	xl_mnt.h	/^    U32  nMapIndex;               \/*The map index based on 'C'*\/$/;"	m	struct:tagSt_xl_partition_info	access:public
+tagSt_xl_partition_info::nPatitionId	xl_mnt.h	/^    U32  nPatitionId;             \/* Partition ID*\/$/;"	m	struct:tagSt_xl_partition_info	access:public
+tagSt_xl_partition_info::nUSBDiskId	xl_mnt.h	/^    U32  nUSBDiskId;              \/* USB Disk ID*\/$/;"	m	struct:tagSt_xl_partition_info	access:public
+tagSt_xl_partition_info::szMountDir	xl_mnt.h	/^    char  szMountDir[256];         \/*Mounted path*\/$/;"	m	struct:tagSt_xl_partition_info	access:public
+tagSt_xl_partition_info::szPartName	xl_mnt.h	/^    char  szPartName[32];          \/*0:Partition name such as sda1*\/$/;"	m	struct:tagSt_xl_partition_info	access:public
+tagSt_xl_partition_info::szVolume	xl_mnt.h	/^    char  szVolume[64];            \/*Volume name*\/$/;"	m	struct:tagSt_xl_partition_info	access:public
+tagSt_xl_partition_info::u64Capacity	xl_mnt.h	/^    U64  u64Capacity;             \/*Total Capacity in Byte units*\/$/;"	m	struct:tagSt_xl_partition_info	access:public
+tagSt_xl_partition_info::u64Used	xl_mnt.h	/^    U64  u64Used;                 \/*Used Space in Byte units*\/$/;"	m	struct:tagSt_xl_partition_info	access:public
+tagSt_xl_storage_info	xl_mnt.h	/^typedef struct tagSt_xl_storage_info$/;"	s
+tagSt_xl_storage_info::nDiskId	xl_mnt.h	/^	U32 nDiskId;                  \/*USB Disk ID ,Create by mnt,0~127*\/$/;"	m	struct:tagSt_xl_storage_info	access:public
+tagSt_xl_storage_info::szDiskName	xl_mnt.h	/^	char szDiskName[32];          \/*Device name of the USB Disk : can't delete it ,because we need the name to parse the kernel log*\/$/;"	m	struct:tagSt_xl_storage_info	access:public
+tagmodule_test	test.c	/^typedef struct tagmodule_test{$/;"	s	file:
+tagmodule_test::module_name	test.c	/^    char * module_name;$/;"	m	struct:tagmodule_test	file:	access:public
+tagmodule_test::test_fun	test.c	/^    TFun * test_fun;$/;"	m	struct:tagmodule_test	file:	access:public
+test_fun	test.c	/^    TFun * test_fun;$/;"	m	struct:tagmodule_test	file:	access:public
+tid	xl_usb_mng.c	/^    pthread_t tid;$/;"	m	struct:tagSt_usb_query_thread	file:	access:public
+tid_r	xl_mnt_mng.c	/^static pthread_t tid_w = 0,tid_r = 0;$/;"	v	file:
+tid_r_break	xl_mnt_mng.c	/^static int tid_w_break=0,tid_r_break=0;$/;"	v	file:
+tid_w	xl_mnt_mng.c	/^static pthread_t tid_w = 0,tid_r = 0;$/;"	v	file:
+tid_w_break	xl_mnt_mng.c	/^static int tid_w_break=0,tid_r_break=0;$/;"	v	file:
+time_diff	xl_mnt_mng.c	/^int time_diff(struct timeval start,struct timeval stop)   $/;"	f	signature:(struct timeval start,struct timeval stop)
+timeval_subtract	xl_mnt_mng.c	/^  int   timeval_subtract(struct   timeval*   result,   struct   timeval*   x,   struct   timeval*   y)   $/;"	f	signature:(struct timeval* result, struct timeval* x, struct timeval* y)
+timeval_subtract	xl_mnt_mng.c	/^int   timeval_subtract(struct   timeval*   result,   struct   timeval*   x,   struct   timeval*   y);$/;"	p	file:	signature:(struct timeval* result, struct timeval* x, struct timeval* y)
+true	led_test.c	14;"	d	file:
+tv_sub	ping.c	/^void tv_sub(struct timeval *out,struct timeval *in)$/;"	f	signature:(struct timeval *out,struct timeval *in)
+tv_sub	ping.c	/^void tv_sub(struct timeval *out,struct timeval *in);$/;"	p	file:	signature:(struct timeval *out,struct timeval *in)
+tvrecv	ping.c	/^struct timeval tvrecv;$/;"	v	typeref:struct:timeval
+type	xl_usb_device.c	/^    int type;$/;"	m	struct:luther_gliethttp	file:	access:public
+u64Capacity	xl_mnt.h	/^    U64  u64Capacity;             \/*Total Capacity in Byte units*\/$/;"	m	struct:tagSt_xl_partition_info	access:public
+u64Used	xl_mnt.h	/^    U64  u64Used;                 \/*Used Space in Byte units*\/$/;"	m	struct:tagSt_xl_partition_info	access:public
+unpack	ping.c	/^int unpack(char *buf,int len)$/;"	f	signature:(char *buf,int len)
+unpack	ping.c	/^int unpack(char *buf,int len);$/;"	p	file:	signature:(char *buf,int len)
+usb_init	module_test.h	/^int usb_init(void);$/;"	p	signature:(void)
+usb_init	xl_mnt_mng.c	/^int usb_init(void)$/;"	f	signature:(void)
+usb_module_test	module_test.h	/^int usb_module_test(void);$/;"	p	signature:(void)
+usb_module_test	xl_mnt_mng.c	/^int usb_module_test(void)$/;"	f	signature:(void)
+usb_start_flag	xl_mnt_mng.c	/^static int usb_start_flag = 0;$/;"	v	file:
+usb_start_run	module_test.h	/^void usb_start_run(void);$/;"	p	signature:(void)
+usb_start_run	xl_mnt_mng.c	/^void usb_start_run()$/;"	f
+usb_stop_run	module_test.h	/^void usb_stop_run(void);$/;"	p	signature:(void)
+usb_stop_run	xl_mnt_mng.c	/^void usb_stop_run()$/;"	f
+write_sdcard_all_thread	xl_mnt_mng.c	/^static void * write_sdcard_all_thread(void)$/;"	f	file:	signature:(void)
+write_usb_all_thread	xl_mnt_mng.c	/^static void * write_usb_all_thread(void)$/;"	f	file:	signature:(void)
+xl_decode_u32	xl_mnt_msg_process.c	/^static int xl_decode_u32(CHAR* pcBuf,ULONG *pulData)$/;"	f	file:	signature:(CHAR* pcBuf,ULONG *pulData)
+xl_encode_u32	xl_mnt_msg_process.c	/^static int xl_encode_u32(char * pcBuf,ULONG ulData,int ulLen)$/;"	f	file:	signature:(char * pcBuf,ULONG ulData,int ulLen)
+xl_mnt_encode_sysload	xl_mnt_usb.h	/^int xl_mnt_encode_sysload(char *pData, int *pLen );$/;"	p	signature:(char *pData, int *pLen )

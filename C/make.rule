@@ -1,0 +1,160 @@
+###############################################
+# 说明: 编译公共规则文件，完成		          #
+# 	1. 编译链接工具选择						  #
+#	2. 源文件目录解析					      #
+#	3. 指定生成目录							  #
+#	4. 编译依赖文件生成					      #
+# 	本文件不要轻易修改						  #
+# 				  							  #
+# 作者: xuhuilin 							  #
+# 版本: 1.0								      #
+# 日期: 2013-12-03							  #
+###############################################
+
+
+.PHONY: all clean
+
+MKDIR = mkdir
+RM = rm
+RMFLAGS = -fr
+
+# 根据命令行选择编译架构
+CROSS_ARCH=arm
+ifeq ($(arch), $(CROSS_ARCH))
+	CROSS_COMPILE = arm-linux-gnueabihf-
+else
+    ifeq ("$(arch)","mtk")
+    CROSS_COMPILE = mipsel-linux-
+    else
+	ifeq ("$(arch)", "x86")
+	CROSS_COMPILE =
+	endif
+    endif
+endif
+
+CC := $(CROSS_COMPILE)gcc
+AR := $(CROSS_COMPILE)ar
+STRIP := $(CROSS_COMPILE)strip
+OBJCOPY := $(CROSS_COMPILE)objcopy
+OBJDUMP := $(CROSS_COMPILE)objdump
+
+ARFLAGS = crs
+
+# 根据编译模式编译不同版本的软件
+COMPILE_MODE ?= debug
+ifeq ("$(COMPILE_MODE)","release")
+    CFLAGS += -fPIC -Werror -O3 -pipe -DXL_RELEASE
+else 
+    CFLAGS += -fPIC -g -O0 -pipe -Wall 
+endif
+
+ifeq ("$(NAND_FLASH_SUPPORT)","1")
+    CFLAGS += -DNAND_FLASH_SUPPORT
+endif
+
+
+# 编译中间文件目录
+DIR_OBJS = objs
+DIR_DEPS = deps
+
+# 第三方库目录
+DIR_THIRD_LIBS = $(ROOT)/build/third_libs
+
+# 最终生成的库与可执行文件目录
+DIR_BIN = $(ROOT)/build/bin
+DIR_LIBS = $(ROOT)/build/lib
+
+DIRS = $(DIR_OBJS) $(DIR_DEPS) $(DIR_BIN) $(DIR_LIBS)
+RMS = $(DIR_OBJS) $(DIR_DEPS)
+
+# 指定生成路径
+ifneq ($(BIN), "")
+	BIN := $(addprefix $(DIR_BIN)/, $(BIN))
+	RMS += $(BIN)
+endif
+
+ifneq ($(LIB_STATIC), "")
+	LIB_STATIC := $(addprefix $(DIR_LIBS)/, $(LIB_STATIC))
+	RMS += $(LIB_STATIC)
+endif
+
+ifneq ($(LIB_DYNAMIC), "")
+	LIB_DYNAMIC := $(addprefix $(DIR_LIBS)/, $(LIB_DYNAMIC))
+	RMS += $(LIB_DYNAMIC)
+endif
+
+################################################
+MODULE_SRCS = $(wildcard *.c)
+OBJS = $(MODULE_SRCS:.c=.o)
+OBJS := $(addprefix $(DIR_OBJS)/, $(OBJS))
+DEPS = $(MODULE_SRCS:.c=.dep)
+DEPS := $(addprefix $(DIR_DEPS)/, $(DEPS))
+
+################################################
+
+# 编译目标要么是可执行文件,要么是库文件
+ifneq ($(BIN), "")
+all: $(BIN)
+endif
+
+# 库文件再分是静态 动态还是都有
+LIB_TARGET =
+
+ifneq ($(LIB_STATIC), "")
+	LIB_TARGET += $(LIB_STATIC)
+endif
+
+ifneq ($(LIB_DYNAMIC), "")
+	LIB_TARGET += $(LIB_DYNAMIC)
+endif
+
+ifneq ($(LIB_TARGET), "")
+all: $(LIB_TARGET)
+endif
+
+
+
+# 加入编译依赖文件作为前置条件
+ifneq ($(MAKECMDGOALS), clean)
+include $(DEPS)
+endif
+
+# 增加需要包含的头文件目录
+ifneq ($(INCLUDE_DIRS), "")
+INCLUDE_DIRS := $(strip $(INCLUDE_DIRS))
+INCLUDE_DIRS := $(addprefix -I, $(INCLUDE_DIRS))
+endif
+
+# 增加需要链接的库名
+ifneq ($(LINK_LIBS), "")
+LINK_LIBS := $(strip $(LINK_LIBS))
+LINK_LIBS := $(addprefix -l, $(LINK_LIBS))
+endif
+
+$(DIRS):
+	$(MKDIR) $@
+
+$(BIN): $(DIR_BIN) $(OBJS)
+	$(CC) $(CFLAGS) -L$(DIR_LIBS) -L$(DIR_THIRD_LIBS) -o $@ $(filter %.o, $^) $(LINK_LIBS)
+
+$(LIB_STATIC): $(DIR_LIBS) $(OBJS)
+	$(AR) $(ARFLAGS) $@ $(filter %.o, $^)
+
+$(LIB_DYNAMIC): $(DIR_LIBS) $(OBJS)
+	$(CC) -shared -o $@ $(filter %.o, $^)
+
+$(DIR_OBJS)/%.o: $(DIR_OBJS) %.c
+	$(CC) $(INCLUDE_DIRS) -o $@  $(CFLAGS) -c $(filter %c, $^)
+
+# 解析编译依赖文件
+$(DIR_DEPS)/%.dep: $(DIR_DEPS) %.c
+	@set -e;\
+	echo "Making $@ ...";\
+	$(CC) $(INCLUDE_DIRS) -E -MM $(filter %.c, $^) | \
+	sed 's,\(.*\)\.o[ :]*,objs/\1.o $@:,g' > $@
+
+lint:
+	cppcheck $(INCLUDE_DIRS) --enable=all --std=posix $(MODULE_SRCS)
+
+clean:
+	$(RM) $(RMFLAGS) $(RMS)

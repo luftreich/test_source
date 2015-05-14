@@ -1,0 +1,2 @@
+mkfs.jffs2 -r rootfs -o fs.jffs2 -e 0x10000 --pad=0x50000 -s 0x800 -l
+mount -t jffs2 /dev/mtdblock10 /tmp/mtd

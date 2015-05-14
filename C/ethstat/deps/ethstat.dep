@@ -1,0 +1,1 @@
+objs/ethstat.o deps/ethstat.dep:ethstat.c

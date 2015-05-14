@@ -1,0 +1,24 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+KERNELDIR	Makefile	/^KERNELDIR := \/home\/vincent\/samba\/Vanilla_Latte\/Board\/trunk\/2.0\/kmodules\/include\/kernel$/;"	m
+TMP	Makefile	/^TMP=*.o *.mod.c .*.cmd *.markers *.order *.symvers .tmp_versions$/;"	m
+def_attrs	create_sys.c	/^static struct attribute *def_attrs[] = {$/;"	v	typeref:struct:attribute	file:
+eric_test_show	create_sys.c	/^ssize_t eric_test_show(struct kobject *kobject, struct attribute *attr,char *buf)$/;"	f	signature:(struct kobject *kobject, struct attribute *attr,char *buf)
+eric_test_show	create_sys.c	/^ssize_t eric_test_show(struct kobject *kobject, struct attribute *attr,char *buf);$/;"	p	file:	signature:(struct kobject *kobject, struct attribute *attr,char *buf)
+eric_test_store	create_sys.c	/^ssize_t eric_test_store(struct kobject *kobject,struct attribute *attr,const char *buf, size_t count)$/;"	f	signature:(struct kobject *kobject,struct attribute *attr,const char *buf, size_t count)
+eric_test_store	create_sys.c	/^ssize_t eric_test_store(struct kobject *kobject,struct attribute *attr,const char *buf, size_t count);$/;"	p	file:	signature:(struct kobject *kobject,struct attribute *attr,const char *buf, size_t count)
+kobj	create_sys.c	/^struct kobject kobj;$/;"	v	typeref:struct:kobject
+kobject_test_exit	create_sys.c	/^module_exit(kobject_test_exit);$/;"	v
+kobject_test_exit	create_sys.c	/^static int kobject_test_exit()$/;"	f	file:
+kobject_test_init	create_sys.c	/^module_init(kobject_test_init);$/;"	v
+kobject_test_init	create_sys.c	/^static int kobject_test_init()$/;"	f	file:
+ktype	create_sys.c	/^struct kobj_type ktype =$/;"	v	typeref:struct:kobj_type
+obj-m	Makefile	/^obj-m :=create_sys.o$/;"	m
+obj_test_release	create_sys.c	/^void obj_test_release(struct kobject *kobject)$/;"	f	signature:(struct kobject *kobject)
+obj_test_release	create_sys.c	/^void obj_test_release(struct kobject *kobject);$/;"	p	file:	signature:(struct kobject *kobject)
+obj_test_sysops	create_sys.c	/^struct sysfs_ops obj_test_sysops =$/;"	v	typeref:struct:sysfs_ops
+test_attr	create_sys.c	/^struct attribute test_attr = {$/;"	v	typeref:struct:attribute

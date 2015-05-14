@@ -1,0 +1,36 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+BIN	Makefile	/^BIN = download$/;"	m
+DOWNLOAD_CONF	download.c	502;"	d	file:
+DOWNLOAD_IMAGE	download.c	503;"	d	file:
+HTTP_DOWNLOAD_FILE_PATH_LEN	download.c	22;"	d	file:
+HTTP_DOWNLOAD_RECV_TIMEOUT	download.c	20;"	d	file:
+HTTP_RECV_BUF_SIZE	download.c	11;"	d	file:
+HTTP_REQUEST	download.c	13;"	d	file:
+INCLUDE_DIRS	Makefile	/^INCLUDE_DIRS = $(ROOT)\/include \\$/;"	m
+LIB_DYNAMIC	Makefile	/^LIB_DYNAMIC =$/;"	m
+LIB_STATIC	Makefile	/^LIB_STATIC =$/;"	m
+LINK_LIBS	Makefile	/^LINK_LIBS = pthread m$/;"	m
+XL_DEBUG	download.c	21;"	d	file:
+agent_create_download_file	download.c	/^FILE* agent_create_download_file(const char* url, char* file_path)$/;"	f	signature:(const char* url, char* file_path)
+agent_create_download_file	download.c	/^static FILE* agent_create_download_file(const char* url, char* file_path);$/;"	p	file:	signature:(const char* url, char* file_path)
+agent_gethostbyname	download.c	/^static uint32_t agent_gethostbyname(const char* hostname);$/;"	p	file:	signature:(const char* hostname)
+agent_gethostbyname	download.c	/^uint32_t agent_gethostbyname(const char* hostname)$/;"	f	signature:(const char* hostname)
+agent_http_download_file	download.c	/^uint32_t agent_http_download_file(char* url)$/;"	f	signature:(char* url)
+agent_parse_http_content_length	download.c	/^int agent_parse_http_content_length(const char* recvbuf)$/;"	f	signature:(const char* recvbuf)
+agent_parse_http_content_length	download.c	/^static int agent_parse_http_content_length(const char* recvbuf);$/;"	p	file:	signature:(const char* recvbuf)
+agent_parse_http_retcode	download.c	/^int agent_parse_http_retcode(const char* recvbuf)$/;"	f	signature:(const char* recvbuf)
+agent_parse_http_retcode	download.c	/^static int agent_parse_http_retcode(const char* recvbuf);$/;"	p	file:	signature:(const char* recvbuf)
+agent_parse_url	download.c	/^int agent_parse_url(char* url, char* domain, int domain_len, uint32_t* p_host_ip, short* p_host_port, int* p_offset)$/;"	f	signature:(char* url, char* domain, int domain_len, uint32_t* p_host_ip, short* p_host_port, int* p_offset)
+agent_parse_url	download.c	/^static int agent_parse_url(char* url, char* domain, int domain_len, uint32_t* p_host_ip, short* p_host_port, int* p_offset);$/;"	p	file:	signature:(char* url, char* domain, int domain_len, uint32_t* p_host_ip, short* p_host_port, int* p_offset)
+agent_tcp_connect	download.c	/^int agent_tcp_connect(uint32_t host_ip, short port)$/;"	f	signature:(uint32_t host_ip, short port)
+agent_tcp_connect	download.c	/^static int agent_tcp_connect(uint32_t host_ip, short port);$/;"	p	file:	signature:(uint32_t host_ip, short port)
+agent_tcp_recv	download.c	/^int agent_tcp_recv(int fd, char* buf, uint32_t buf_len, void * ptr)$/;"	f	signature:(int fd, char* buf, uint32_t buf_len, void * ptr)
+agent_tcp_recv	download.c	/^static int agent_tcp_recv(int fd, char* buf, uint32_t buf_len, void *);$/;"	p	file:	signature:(int fd, char* buf, uint32_t buf_len, void *)
+agent_tcp_send	download.c	/^int agent_tcp_send(int fd, const char* data, uint32_t to_send)$/;"	f	signature:(int fd, const char* data, uint32_t to_send)
+agent_tcp_send	download.c	/^static int agent_tcp_send(int fd, const char* data, uint32_t to_send);$/;"	p	file:	signature:(int fd, const char* data, uint32_t to_send)
+main	download.c	/^int main(int args,char * argv[])$/;"	f	signature:(int args,char * argv[])

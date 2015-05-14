@@ -1,0 +1,9 @@
+callback({
+    "version": "V1.5.0058",
+    "product": ["RS1403"],
+    "description": "1.解决wifi高级设置无法保存的问题\n2.解决穿墙模式开启后提示错误的问题\n3.解决部分用户水晶挖矿部署完无法上传的问题\n4.修改高级设置时服务器错误问题\n5.解决恢复出厂时，无法自动解绑问题\n6.优化wifi设置逻辑，解决部分用户设置时某些选项不生效问题\n7.解决水晶资格检查的bug\n8.解决有的USB硬盘分区卷标识别不准的问题\n9.解决一级路由无法挖矿的问题",
+    "url": "http://down.sandai.net/peiluyou/XL_ROM_V1.5.0058.img",
+    "md5": "5d80f853cec7c25be93c1b116fdd3bd5",
+    "size": 20398144,
+    "forcedUpdate": false
+})

@@ -1,0 +1,117 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+APP_MAGIC	test_burn_img.c	10;"	d	file:
+APP_MAGIC	test_burn_img_org.c	10;"	d	file:
+BIN	Makefile	/^BIN = upgrade_mtk$/;"	m
+CFG_MTD	test_erase_flash.c	194;"	d	file:
+CRC32_INIT_VALUE	test_burn_img.c	20;"	d	file:
+CRC32_INIT_VALUE	test_burn_img_org.c	20;"	d	file:
+CRC_INNER_LOOP	test_burn_img.c	27;"	d	file:
+CRC_INNER_LOOP	test_burn_img_org.c	27;"	d	file:
+GetFileCRC	test_burn_img.c	/^uint32_t GetFileCRC(FILE *fd)$/;"	f	signature:(FILE *fd)
+GetFileCRC	test_burn_img_org.c	/^uint32_t GetFileCRC(FILE *fd)$/;"	f	signature:(FILE *fd)
+IMG_MAGIC	test_burn_img.c	9;"	d	file:
+IMG_MAGIC	test_burn_img_org.c	9;"	d	file:
+INCLUDE_DIRS	Makefile	/^INCLUDE_DIRS = $(ROOT)\/include \\$/;"	m
+LIB_DYNAMIC	Makefile	/^LIB_DYNAMIC =$/;"	m
+LIB_STATIC	Makefile	/^LIB_STATIC =$/;"	m
+LINK_LIBS	Makefile	/^LINK_LIBS = pthread  $/;"	m
+MAXLEN	test_burn_img.c	484;"	d	file:
+MAXLEN	test_burn_img_org.c	372;"	d	file:
+MAXLEN	test_erase_flash.c	193;"	d	file:
+MAX_FIRMWARE_SIZE	test_burn_img.c	25;"	d	file:
+MAX_FIRMWARE_SIZE	test_burn_img_org.c	25;"	d	file:
+MIN	test_burn_img.c	26;"	d	file:
+MIN	test_burn_img_org.c	26;"	d	file:
+OFFSETOF	test_burn_img.c	21;"	d	file:
+OFFSETOF	test_burn_img_org.c	21;"	d	file:
+ROM_SIZE	test_erase_flash.c	195;"	d	file:
+TRX_MAGIC	test_burn_img.c	24;"	d	file:
+TRX_MAGIC	test_burn_img_org.c	24;"	d	file:
+TRX_MAGIC_STR	test_burn_img.c	23;"	d	file:
+TRX_MAGIC_STR	test_burn_img_org.c	23;"	d	file:
+TRX_MAX_OFFSET	test_burn_img.c	22;"	d	file:
+TRX_MAX_OFFSET	test_burn_img_org.c	22;"	d	file:
+_main	test_erase_flash.c	/^int _main(int argc, char * argv[])$/;"	f	signature:(int argc, char * argv[])
+board_id	test_burn_img.c	/^    uint8 board_id[16];       \/* board id *\/$/;"	m	struct:img_header	file:	access:public
+board_id	test_burn_img_org.c	/^    uint8 board_id[16];       \/* board id *\/$/;"	m	struct:img_header	file:	access:public
+burn_data	test_burn_img.c	/^int burn_data(char * src_name,char * mtd_name,int nType)$/;"	f	signature:(char * src_name,char * mtd_name,int nType)
+burn_data	test_burn_img_org.c	/^int burn_data(char * src_name,char * mtd_name,int nType)$/;"	f	signature:(char * src_name,char * mtd_name,int nType)
+burn_file_to_mtd	test_burn_img.c	/^int burn_file_to_mtd(char * file_name,int nType,int part_type)$/;"	f	signature:(char * file_name,int nType,int part_type)
+burn_file_to_mtd	test_burn_img_org.c	/^int burn_file_to_mtd(char * file_name,int nType)$/;"	f	signature:(char * file_name,int nType)
+caculate_crc_file	test_burn_img.c	/^int caculate_crc_file(char * upload_file,int *pnCRC)$/;"	f	signature:(char * upload_file,int *pnCRC)
+caculate_crc_file	test_burn_img_org.c	/^int caculate_crc_file(char * upload_file,int *pnCRC)$/;"	f	signature:(char * upload_file,int *pnCRC)
+caculate_crc_mtd	test_burn_img.c	/^int caculate_crc_mtd(char * upload_file,int *pnCRC)$/;"	f	signature:(char * upload_file,int *pnCRC)
+check_img_file	test_burn_img.c	/^int check_img_file(char * upload_file,int *pnType)$/;"	f	signature:(char * upload_file,int *pnType)
+check_img_file	test_burn_img_org.c	/^int check_img_file(char * upload_file,int *pnType)$/;"	f	signature:(char * upload_file,int *pnType)
+crc32	test_burn_img.c	/^uint32 crc32; \/* 32-bit CRC from flag_version to end of file *\/$/;"	m	struct:trx_header	file:	access:public
+crc32	test_burn_img_org.c	/^uint32 crc32; \/* 32-bit CRC from flag_version to end of file *\/$/;"	m	struct:trx_header	file:	access:public
+crc32_table	test_burn_img.c	/^static const uint32 crc32_table[256] = {$/;"	v	file:
+crc32_table	test_burn_img_org.c	/^static const uint32 crc32_table[256] = {$/;"	v	file:
+erase_block	test_erase_flash.c	/^int erase_block(const char *device_name,long start,int count)$/;"	f	signature:(const char *device_name,long start,int count)
+flag_version	test_burn_img.c	/^uint32 flag_version; \/* 0:15 flags, 16:31 version *\/$/;"	m	struct:trx_header	file:	access:public
+flag_version	test_burn_img_org.c	/^uint32 flag_version; \/* 0:15 flags, 16:31 version *\/$/;"	m	struct:trx_header	file:	access:public
+flashfd	test_erase_flash.c	/^FILE *flashfd = NULL;$/;"	v
+g_crc	test_burn_img.c	/^int g_crc =0 ;$/;"	v
+hndcrc32	test_burn_img.c	/^uint32 hndcrc32(uint8 *pdata, uint32 nbytes, uint32 crc)$/;"	f	signature:(uint8 *pdata, uint32 nbytes, uint32 crc)
+hndcrc32	test_burn_img.c	/^uint32 hndcrc32(uint8 *pdata, uint32 nbytes, uint32 crc);$/;"	p	file:	signature:(uint8 *pdata, uint32 nbytes, uint32 crc)
+hndcrc32	test_burn_img_org.c	/^uint32 hndcrc32(uint8 *pdata, uint32 nbytes, uint32 crc)$/;"	f	signature:(uint8 *pdata, uint32 nbytes, uint32 crc)
+hndcrc32	test_burn_img_org.c	/^uint32 hndcrc32(uint8 *pdata, uint32 nbytes, uint32 crc);$/;"	p	file:	signature:(uint8 *pdata, uint32 nbytes, uint32 crc)
+img_header	test_burn_img.c	/^struct img_header{$/;"	s	file:
+img_header	test_burn_img_org.c	/^struct img_header{$/;"	s	file:
+img_header::board_id	test_burn_img.c	/^    uint8 board_id[16];       \/* board id *\/$/;"	m	struct:img_header	file:	access:public
+img_header::board_id	test_burn_img_org.c	/^    uint8 board_id[16];       \/* board id *\/$/;"	m	struct:img_header	file:	access:public
+img_header::nMagicNo	test_burn_img.c	/^    uint32 nMagicNo;            \/* IMG 0x00474D49*\/$/;"	m	struct:img_header	file:	access:public
+img_header::nMagicNo	test_burn_img_org.c	/^    uint32 nMagicNo;            \/* IMG 0x00474D49*\/$/;"	m	struct:img_header	file:	access:public
+img_header::product	test_burn_img.c	/^    uint8 product[16];        \/* product name *\/$/;"	m	struct:img_header	file:	access:public
+img_header::product	test_burn_img_org.c	/^    uint8 product[16];        \/* product name *\/$/;"	m	struct:img_header	file:	access:public
+img_header::reserved	test_burn_img.c	/^    uint8 reserved[16];       \/* reserved unuse *\/$/;"	m	struct:img_header	file:	access:public
+img_header::reserved	test_burn_img_org.c	/^    uint8 reserved[16];       \/* reserved unuse *\/$/;"	m	struct:img_header	file:	access:public
+img_header::version	test_burn_img.c	/^    uint8 version[12];        \/* version *\/$/;"	m	struct:img_header	file:	access:public
+img_header::version	test_burn_img_org.c	/^    uint8 version[12];        \/* version *\/$/;"	m	struct:img_header	file:	access:public
+len	test_burn_img.c	/^uint32 len; \/* Length of file including header *\/$/;"	m	struct:trx_header	file:	access:public
+len	test_burn_img_org.c	/^uint32 len; \/* Length of file including header *\/$/;"	m	struct:trx_header	file:	access:public
+magic	test_burn_img.c	/^uint32 magic; \/* "HDR0" (0x30524448)*\/$/;"	m	struct:trx_header	file:	access:public
+magic	test_burn_img_org.c	/^uint32 magic; \/* "HDR0" (0x30524448)*\/$/;"	m	struct:trx_header	file:	access:public
+main	test_burn_img.c	/^int main(int argc,char **argv)$/;"	f	signature:(int argc,char **argv)
+main	test_burn_img_org.c	/^int main(int argc,char **argv)$/;"	f	signature:(int argc,char **argv)
+main_test	test_erase_flash.c	/^int main_test(int argc, char * argv[])$/;"	f	signature:(int argc, char * argv[])
+nMagicNo	test_burn_img.c	/^    uint32 nMagicNo;            \/* IMG 0x00474D49*\/$/;"	m	struct:img_header	file:	access:public
+nMagicNo	test_burn_img_org.c	/^    uint32 nMagicNo;            \/* IMG 0x00474D49*\/$/;"	m	struct:img_header	file:	access:public
+non_region_erase	test_erase_flash.c	/^int non_region_erase(int Fd, int start, int count, int unlock)$/;"	f	signature:(int Fd, int start, int count, int unlock)
+offsets	test_burn_img.c	/^uint32 offsets[3];\/*offset 0 是第一个bin的起始地址*\/$/;"	m	struct:trx_header	file:	access:public
+offsets	test_burn_img_org.c	/^uint32 offsets[3];\/*offset 0 是第一个bin的起始地址*\/$/;"	m	struct:trx_header	file:	access:public
+product	test_burn_img.c	/^    uint8 product[16];        \/* product name *\/$/;"	m	struct:img_header	file:	access:public
+product	test_burn_img_org.c	/^    uint8 product[16];        \/* product name *\/$/;"	m	struct:img_header	file:	access:public
+region_erase	test_erase_flash.c	/^int region_erase(int Fd, int start, int count, int unlock, int regcount)$/;"	f	signature:(int Fd, int start, int count, int unlock, int regcount)
+reserved	test_burn_img.c	/^    uint8 reserved[16];       \/* reserved unuse *\/$/;"	m	struct:img_header	file:	access:public
+reserved	test_burn_img_org.c	/^    uint8 reserved[16];       \/* reserved unuse *\/$/;"	m	struct:img_header	file:	access:public
+safe_fread	test_burn_img.c	/^int safe_fread(void *DstAddr,int cnt,int size,FILE *pfile)$/;"	f	signature:(void *DstAddr,int cnt,int size,FILE *pfile)
+safe_fread	test_burn_img_org.c	/^int safe_fread(void *DstAddr,int cnt,int size,FILE *pfile)$/;"	f	signature:(void *DstAddr,int cnt,int size,FILE *pfile)
+trx_header	test_burn_img.c	/^struct trx_header {$/;"	s	file:
+trx_header	test_burn_img_org.c	/^struct trx_header {$/;"	s	file:
+trx_header::crc32	test_burn_img.c	/^uint32 crc32; \/* 32-bit CRC from flag_version to end of file *\/$/;"	m	struct:trx_header	file:	access:public
+trx_header::crc32	test_burn_img_org.c	/^uint32 crc32; \/* 32-bit CRC from flag_version to end of file *\/$/;"	m	struct:trx_header	file:	access:public
+trx_header::flag_version	test_burn_img.c	/^uint32 flag_version; \/* 0:15 flags, 16:31 version *\/$/;"	m	struct:trx_header	file:	access:public
+trx_header::flag_version	test_burn_img_org.c	/^uint32 flag_version; \/* 0:15 flags, 16:31 version *\/$/;"	m	struct:trx_header	file:	access:public
+trx_header::len	test_burn_img.c	/^uint32 len; \/* Length of file including header *\/$/;"	m	struct:trx_header	file:	access:public
+trx_header::len	test_burn_img_org.c	/^uint32 len; \/* Length of file including header *\/$/;"	m	struct:trx_header	file:	access:public
+trx_header::magic	test_burn_img.c	/^uint32 magic; \/* "HDR0" (0x30524448)*\/$/;"	m	struct:trx_header	file:	access:public
+trx_header::magic	test_burn_img_org.c	/^uint32 magic; \/* "HDR0" (0x30524448)*\/$/;"	m	struct:trx_header	file:	access:public
+trx_header::offsets	test_burn_img.c	/^uint32 offsets[3];\/*offset 0 是第一个bin的起始地址*\/$/;"	m	struct:trx_header	file:	access:public
+trx_header::offsets	test_burn_img_org.c	/^uint32 offsets[3];\/*offset 0 是第一个bin的起始地址*\/$/;"	m	struct:trx_header	file:	access:public
+uint32	test_burn_img.c	/^typedef unsigned int uint32;$/;"	t	file:
+uint32	test_burn_img_org.c	/^typedef unsigned int uint32;$/;"	t	file:
+uint8	test_burn_img.c	/^typedef unsigned char uint8;$/;"	t	file:
+uint8	test_burn_img_org.c	/^typedef unsigned char uint8;$/;"	t	file:
+uintptr	test_burn_img.c	/^typedef unsigned int * uintptr;$/;"	t	file:
+uintptr	test_burn_img_org.c	/^typedef unsigned int * uintptr;$/;"	t	file:
+version	test_burn_img.c	/^    uint8 version[12];        \/* version *\/$/;"	m	struct:img_header	file:	access:public
+version	test_burn_img_org.c	/^    uint8 version[12];        \/* version *\/$/;"	m	struct:img_header	file:	access:public
+xl_read_rom	test_erase_flash.c	/^int xl_read_rom(int nOffset,int len,const char *DesAddr)$/;"	f	signature:(int nOffset,int len,const char *DesAddr)
+xl_rom_init	test_erase_flash.c	/^int xl_rom_init(void)$/;"	f	signature:(void)
+xl_write_rom	test_erase_flash.c	/^int xl_write_rom(int nOffset,const char *SrcAddr,int len)$/;"	f	signature:(int nOffset,const char *SrcAddr,int len)

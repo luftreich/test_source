@@ -1,0 +1,2 @@
+objs/test_burn_img.o deps/test_burn_img.dep:test_burn_img.c \
+ /home/vincent/samba/test/C/include/xl_common.h test_upgrade.h image.h

@@ -1,0 +1,2 @@
+objs/ntp_client.o deps/ntp_client.dep:ntp_client.c \
+ /home/vincent/share/project/test/C/include/xl_common.h
