@@ -1,0 +1,39 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+BIN	Makefile	/^BIN = http$/;"	m
+DOWNLOAD_CONF	download.c	544;"	d	file:
+DOWNLOAD_IMAGE	download.c	545;"	d	file:
+HTTP_DOWNLOAD_FILE_PATH_LEN	download.c	23;"	d	file:
+HTTP_DOWNLOAD_RECV_TIMEOUT	download.c	21;"	d	file:
+HTTP_RECV_BUF_SIZE	download.c	12;"	d	file:
+HTTP_REQUEST	download.c	14;"	d	file:
+INCLUDE_DIRS	Makefile	/^INCLUDE_DIRS = $(ROOT)\/include \\$/;"	m
+LIB_DYNAMIC	Makefile	/^LIB_DYNAMIC =$/;"	m
+LIB_STATIC	Makefile	/^LIB_STATIC =$/;"	m
+LINK_LIBS	Makefile	/^LINK_LIBS = pthread m$/;"	m
+XL_DEBUG	download.c	22;"	d	file:
+http_create_download_file	download.c	/^FILE* http_create_download_file(const char* url, char* file_path)$/;"	f	signature:(const char* url, char* file_path)
+http_create_download_file	download.c	/^static FILE* http_create_download_file(const char* url, char* file_path);$/;"	p	file:	signature:(const char* url, char* file_path)
+http_download_file	download.c	/^uint32_t http_download_file(char* url)$/;"	f	signature:(char* url)
+http_gethostbyname	download.c	/^static uint32_t http_gethostbyname(const char* hostname);$/;"	p	file:	signature:(const char* hostname)
+http_gethostbyname	download.c	/^uint32_t http_gethostbyname(const char* hostname)$/;"	f	signature:(const char* hostname)
+http_parse_http_content_length	download.c	/^int http_parse_http_content_length(const char* recvbuf)$/;"	f	signature:(const char* recvbuf)
+http_parse_http_content_length	download.c	/^static int http_parse_http_content_length(const char* recvbuf);$/;"	p	file:	signature:(const char* recvbuf)
+http_parse_http_retcode	download.c	/^int http_parse_http_retcode(const char* recvbuf)$/;"	f	signature:(const char* recvbuf)
+http_parse_http_retcode	download.c	/^static int http_parse_http_retcode(const char* recvbuf);$/;"	p	file:	signature:(const char* recvbuf)
+http_parse_url	download.c	/^int http_parse_url(char* url, char* domain, int domain_len, uint32_t* p_host_ip, short* p_host_port, int* p_offset)$/;"	f	signature:(char* url, char* domain, int domain_len, uint32_t* p_host_ip, short* p_host_port, int* p_offset)
+http_parse_url	download.c	/^static int http_parse_url(char* url, char* domain, int domain_len, uint32_t* p_host_ip, short* p_host_port, int* p_offset);$/;"	p	file:	signature:(char* url, char* domain, int domain_len, uint32_t* p_host_ip, short* p_host_port, int* p_offset)
+http_tcp_connect	download.c	/^int http_tcp_connect(uint32_t host_ip, short port)$/;"	f	signature:(uint32_t host_ip, short port)
+http_tcp_connect	download.c	/^static int http_tcp_connect(uint32_t host_ip, short port);$/;"	p	file:	signature:(uint32_t host_ip, short port)
+http_tcp_recv	download.c	/^int http_tcp_recv(int fd, char* buf, uint32_t buf_len, void * ptr)$/;"	f	signature:(int fd, char* buf, uint32_t buf_len, void * ptr)
+http_tcp_recv	download.c	/^static int http_tcp_recv(int fd, char* buf, uint32_t buf_len, void *);$/;"	p	file:	signature:(int fd, char* buf, uint32_t buf_len, void *)
+http_tcp_send	download.c	/^int http_tcp_send(int fd, const char* data, uint32_t to_send)$/;"	f	signature:(int fd, const char* data, uint32_t to_send)
+http_tcp_send	download.c	/^static int http_tcp_send(int fd, const char* data, uint32_t to_send);$/;"	p	file:	signature:(int fd, const char* data, uint32_t to_send)
+main	download.c	/^int main(int args,char * argv[])$/;"	f	signature:(int args,char * argv[])
+time_diff	download.c	/^int time_diff(struct timeval start,struct timeval stop)   $/;"	f	signature:(struct timeval start,struct timeval stop)
+timeval_subtract	download.c	/^  int   timeval_subtract(struct   timeval*   result,   struct   timeval*   x,   struct   timeval*   y)   $/;"	f	signature:(struct timeval* result, struct timeval* x, struct timeval* y)
+timeval_subtract	download.c	/^int   timeval_subtract(struct   timeval*   result,   struct   timeval*   x,   struct   timeval*   y);$/;"	p	file:	signature:(struct timeval* result, struct timeval* x, struct timeval* y)

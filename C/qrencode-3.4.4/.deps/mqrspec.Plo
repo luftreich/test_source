@@ -1,0 +1,156 @@
+mqrspec.lo: mqrspec.c \
+ /home/vincent/samba/gitlab/hammer/Board/trunk/mining_amlogic/amlogic_toolchain/staging_dir/toolchain-arm_cortex-a5+neon_gcc-4.8-linaro_eglibc-2.19_eabi/include/stdc-predef.h \
+ config.h \
+ /home/vincent/samba/gitlab/hammer/Board/trunk/mining_amlogic/amlogic_toolchain/staging_dir/toolchain-arm_cortex-a5+neon_gcc-4.8-linaro_eglibc-2.19_eabi/include/stdio.h \
+ /home/vincent/samba/gitlab/hammer/Board/trunk/mining_amlogic/amlogic_toolchain/staging_dir/toolchain-arm_cortex-a5+neon_gcc-4.8-linaro_eglibc-2.19_eabi/include/features.h \
+ /home/vincent/samba/gitlab/hammer/Board/trunk/mining_amlogic/amlogic_toolchain/staging_dir/toolchain-arm_cortex-a5+neon_gcc-4.8-linaro_eglibc-2.19_eabi/include/sys/cdefs.h \
+ /home/vincent/samba/gitlab/hammer/Board/trunk/mining_amlogic/amlogic_toolchain/staging_dir/toolchain-arm_cortex-a5+neon_gcc-4.8-linaro_eglibc-2.19_eabi/include/bits/wordsize.h \
+ /home/vincent/samba/gitlab/hammer/Board/trunk/mining_amlogic/amlogic_toolchain/staging_dir/toolchain-arm_cortex-a5+neon_gcc-4.8-linaro_eglibc-2.19_eabi/include/gnu/stubs.h \
+ /home/vincent/samba/gitlab/hammer/Board/trunk/mining_amlogic/amlogic_toolchain/staging_dir/toolchain-arm_cortex-a5+neon_gcc-4.8-linaro_eglibc-2.19_eabi/include/gnu/stubs-hard.h \
+ /home/vincent/samba/gitlab/hammer/Board/trunk/mining_amlogic/amlogic_toolchain/staging_dir/toolchain-arm_cortex-a5+neon_gcc-4.8-linaro_eglibc-2.19_eabi/lib/gcc/arm-openwrt-linux-gnueabi/4.8.3/include/stddef.h \
+ /home/vincent/samba/gitlab/hammer/Board/trunk/mining_amlogic/amlogic_toolchain/staging_dir/toolchain-arm_cortex-a5+neon_gcc-4.8-linaro_eglibc-2.19_eabi/include/bits/types.h \
+ /home/vincent/samba/gitlab/hammer/Board/trunk/mining_amlogic/amlogic_toolchain/staging_dir/toolchain-arm_cortex-a5+neon_gcc-4.8-linaro_eglibc-2.19_eabi/include/bits/typesizes.h \
+ /home/vincent/samba/gitlab/hammer/Board/trunk/mining_amlogic/amlogic_toolchain/staging_dir/toolchain-arm_cortex-a5+neon_gcc-4.8-linaro_eglibc-2.19_eabi/include/libio.h \
+ /home/vincent/samba/gitlab/hammer/Board/trunk/mining_amlogic/amlogic_toolchain/staging_dir/toolchain-arm_cortex-a5+neon_gcc-4.8-linaro_eglibc-2.19_eabi/include/_G_config.h \
+ /home/vincent/samba/gitlab/hammer/Board/trunk/mining_amlogic/amlogic_toolchain/staging_dir/toolchain-arm_cortex-a5+neon_gcc-4.8-linaro_eglibc-2.19_eabi/include/wchar.h \
+ /home/vincent/samba/gitlab/hammer/Board/trunk/mining_amlogic/amlogic_toolchain/staging_dir/toolchain-arm_cortex-a5+neon_gcc-4.8-linaro_eglibc-2.19_eabi/lib/gcc/arm-openwrt-linux-gnueabi/4.8.3/include/stdarg.h \
+ /home/vincent/samba/gitlab/hammer/Board/trunk/mining_amlogic/amlogic_toolchain/staging_dir/toolchain-arm_cortex-a5+neon_gcc-4.8-linaro_eglibc-2.19_eabi/include/bits/stdio_lim.h \
+ /home/vincent/samba/gitlab/hammer/Board/trunk/mining_amlogic/amlogic_toolchain/staging_dir/toolchain-arm_cortex-a5+neon_gcc-4.8-linaro_eglibc-2.19_eabi/include/bits/sys_errlist.h \
+ /home/vincent/samba/gitlab/hammer/Board/trunk/mining_amlogic/amlogic_toolchain/staging_dir/toolchain-arm_cortex-a5+neon_gcc-4.8-linaro_eglibc-2.19_eabi/include/bits/stdio.h \
+ /home/vincent/samba/gitlab/hammer/Board/trunk/mining_amlogic/amlogic_toolchain/staging_dir/toolchain-arm_cortex-a5+neon_gcc-4.8-linaro_eglibc-2.19_eabi/include/stdlib.h \
+ /home/vincent/samba/gitlab/hammer/Board/trunk/mining_amlogic/amlogic_toolchain/staging_dir/toolchain-arm_cortex-a5+neon_gcc-4.8-linaro_eglibc-2.19_eabi/include/bits/waitflags.h \
+ /home/vincent/samba/gitlab/hammer/Board/trunk/mining_amlogic/amlogic_toolchain/staging_dir/toolchain-arm_cortex-a5+neon_gcc-4.8-linaro_eglibc-2.19_eabi/include/bits/waitstatus.h \
+ /home/vincent/samba/gitlab/hammer/Board/trunk/mining_amlogic/amlogic_toolchain/staging_dir/toolchain-arm_cortex-a5+neon_gcc-4.8-linaro_eglibc-2.19_eabi/include/endian.h \
+ /home/vincent/samba/gitlab/hammer/Board/trunk/mining_amlogic/amlogic_toolchain/staging_dir/toolchain-arm_cortex-a5+neon_gcc-4.8-linaro_eglibc-2.19_eabi/include/bits/endian.h \
+ /home/vincent/samba/gitlab/hammer/Board/trunk/mining_amlogic/amlogic_toolchain/staging_dir/toolchain-arm_cortex-a5+neon_gcc-4.8-linaro_eglibc-2.19_eabi/include/bits/byteswap.h \
+ /home/vincent/samba/gitlab/hammer/Board/trunk/mining_amlogic/amlogic_toolchain/staging_dir/toolchain-arm_cortex-a5+neon_gcc-4.8-linaro_eglibc-2.19_eabi/include/bits/byteswap-16.h \
+ /home/vincent/samba/gitlab/hammer/Board/trunk/mining_amlogic/amlogic_toolchain/staging_dir/toolchain-arm_cortex-a5+neon_gcc-4.8-linaro_eglibc-2.19_eabi/include/sys/types.h \
+ /home/vincent/samba/gitlab/hammer/Board/trunk/mining_amlogic/amlogic_toolchain/staging_dir/toolchain-arm_cortex-a5+neon_gcc-4.8-linaro_eglibc-2.19_eabi/include/time.h \
+ /home/vincent/samba/gitlab/hammer/Board/trunk/mining_amlogic/amlogic_toolchain/staging_dir/toolchain-arm_cortex-a5+neon_gcc-4.8-linaro_eglibc-2.19_eabi/include/sys/select.h \
+ /home/vincent/samba/gitlab/hammer/Board/trunk/mining_amlogic/amlogic_toolchain/staging_dir/toolchain-arm_cortex-a5+neon_gcc-4.8-linaro_eglibc-2.19_eabi/include/bits/select.h \
+ /home/vincent/samba/gitlab/hammer/Board/trunk/mining_amlogic/amlogic_toolchain/staging_dir/toolchain-arm_cortex-a5+neon_gcc-4.8-linaro_eglibc-2.19_eabi/include/bits/sigset.h \
+ /home/vincent/samba/gitlab/hammer/Board/trunk/mining_amlogic/amlogic_toolchain/staging_dir/toolchain-arm_cortex-a5+neon_gcc-4.8-linaro_eglibc-2.19_eabi/include/bits/time.h \
+ /home/vincent/samba/gitlab/hammer/Board/trunk/mining_amlogic/amlogic_toolchain/staging_dir/toolchain-arm_cortex-a5+neon_gcc-4.8-linaro_eglibc-2.19_eabi/include/sys/sysmacros.h \
+ /home/vincent/samba/gitlab/hammer/Board/trunk/mining_amlogic/amlogic_toolchain/staging_dir/toolchain-arm_cortex-a5+neon_gcc-4.8-linaro_eglibc-2.19_eabi/include/bits/pthreadtypes.h \
+ /home/vincent/samba/gitlab/hammer/Board/trunk/mining_amlogic/amlogic_toolchain/staging_dir/toolchain-arm_cortex-a5+neon_gcc-4.8-linaro_eglibc-2.19_eabi/include/alloca.h \
+ /home/vincent/samba/gitlab/hammer/Board/trunk/mining_amlogic/amlogic_toolchain/staging_dir/toolchain-arm_cortex-a5+neon_gcc-4.8-linaro_eglibc-2.19_eabi/include/bits/stdlib-bsearch.h \
+ /home/vincent/samba/gitlab/hammer/Board/trunk/mining_amlogic/amlogic_toolchain/staging_dir/toolchain-arm_cortex-a5+neon_gcc-4.8-linaro_eglibc-2.19_eabi/include/bits/stdlib-float.h \
+ /home/vincent/samba/gitlab/hammer/Board/trunk/mining_amlogic/amlogic_toolchain/staging_dir/toolchain-arm_cortex-a5+neon_gcc-4.8-linaro_eglibc-2.19_eabi/include/string.h \
+ /home/vincent/samba/gitlab/hammer/Board/trunk/mining_amlogic/amlogic_toolchain/staging_dir/toolchain-arm_cortex-a5+neon_gcc-4.8-linaro_eglibc-2.19_eabi/include/xlocale.h \
+ /home/vincent/samba/gitlab/hammer/Board/trunk/mining_amlogic/amlogic_toolchain/staging_dir/toolchain-arm_cortex-a5+neon_gcc-4.8-linaro_eglibc-2.19_eabi/include/bits/string.h \
+ /home/vincent/samba/gitlab/hammer/Board/trunk/mining_amlogic/amlogic_toolchain/staging_dir/toolchain-arm_cortex-a5+neon_gcc-4.8-linaro_eglibc-2.19_eabi/include/bits/string2.h \
+ /home/vincent/samba/gitlab/hammer/Board/trunk/mining_amlogic/amlogic_toolchain/staging_dir/toolchain-arm_cortex-a5+neon_gcc-4.8-linaro_eglibc-2.19_eabi/include/errno.h \
+ /home/vincent/samba/gitlab/hammer/Board/trunk/mining_amlogic/amlogic_toolchain/staging_dir/toolchain-arm_cortex-a5+neon_gcc-4.8-linaro_eglibc-2.19_eabi/include/bits/errno.h \
+ /home/vincent/samba/gitlab/hammer/Board/trunk/mining_amlogic/amlogic_toolchain/staging_dir/toolchain-arm_cortex-a5+neon_gcc-4.8-linaro_eglibc-2.19_eabi/include/linux/errno.h \
+ /home/vincent/samba/gitlab/hammer/Board/trunk/mining_amlogic/amlogic_toolchain/staging_dir/toolchain-arm_cortex-a5+neon_gcc-4.8-linaro_eglibc-2.19_eabi/include/asm/errno.h \
+ /home/vincent/samba/gitlab/hammer/Board/trunk/mining_amlogic/amlogic_toolchain/staging_dir/toolchain-arm_cortex-a5+neon_gcc-4.8-linaro_eglibc-2.19_eabi/include/asm-generic/errno.h \
+ /home/vincent/samba/gitlab/hammer/Board/trunk/mining_amlogic/amlogic_toolchain/staging_dir/toolchain-arm_cortex-a5+neon_gcc-4.8-linaro_eglibc-2.19_eabi/include/asm-generic/errno-base.h \
+ /home/vincent/samba/gitlab/hammer/Board/trunk/mining_amlogic/amlogic_toolchain/staging_dir/toolchain-arm_cortex-a5+neon_gcc-4.8-linaro_eglibc-2.19_eabi/include/pthread.h \
+ /home/vincent/samba/gitlab/hammer/Board/trunk/mining_amlogic/amlogic_toolchain/staging_dir/toolchain-arm_cortex-a5+neon_gcc-4.8-linaro_eglibc-2.19_eabi/include/sched.h \
+ /home/vincent/samba/gitlab/hammer/Board/trunk/mining_amlogic/amlogic_toolchain/staging_dir/toolchain-arm_cortex-a5+neon_gcc-4.8-linaro_eglibc-2.19_eabi/include/bits/sched.h \
+ /home/vincent/samba/gitlab/hammer/Board/trunk/mining_amlogic/amlogic_toolchain/staging_dir/toolchain-arm_cortex-a5+neon_gcc-4.8-linaro_eglibc-2.19_eabi/include/bits/setjmp.h \
+ mqrspec.h qrencode.h
+
+/home/vincent/samba/gitlab/hammer/Board/trunk/mining_amlogic/amlogic_toolchain/staging_dir/toolchain-arm_cortex-a5+neon_gcc-4.8-linaro_eglibc-2.19_eabi/include/stdc-predef.h:
+
+config.h:
+
+/home/vincent/samba/gitlab/hammer/Board/trunk/mining_amlogic/amlogic_toolchain/staging_dir/toolchain-arm_cortex-a5+neon_gcc-4.8-linaro_eglibc-2.19_eabi/include/stdio.h:
+
+/home/vincent/samba/gitlab/hammer/Board/trunk/mining_amlogic/amlogic_toolchain/staging_dir/toolchain-arm_cortex-a5+neon_gcc-4.8-linaro_eglibc-2.19_eabi/include/features.h:
+
+/home/vincent/samba/gitlab/hammer/Board/trunk/mining_amlogic/amlogic_toolchain/staging_dir/toolchain-arm_cortex-a5+neon_gcc-4.8-linaro_eglibc-2.19_eabi/include/sys/cdefs.h:
+
+/home/vincent/samba/gitlab/hammer/Board/trunk/mining_amlogic/amlogic_toolchain/staging_dir/toolchain-arm_cortex-a5+neon_gcc-4.8-linaro_eglibc-2.19_eabi/include/bits/wordsize.h:
+
+/home/vincent/samba/gitlab/hammer/Board/trunk/mining_amlogic/amlogic_toolchain/staging_dir/toolchain-arm_cortex-a5+neon_gcc-4.8-linaro_eglibc-2.19_eabi/include/gnu/stubs.h:
+
+/home/vincent/samba/gitlab/hammer/Board/trunk/mining_amlogic/amlogic_toolchain/staging_dir/toolchain-arm_cortex-a5+neon_gcc-4.8-linaro_eglibc-2.19_eabi/include/gnu/stubs-hard.h:
+
+/home/vincent/samba/gitlab/hammer/Board/trunk/mining_amlogic/amlogic_toolchain/staging_dir/toolchain-arm_cortex-a5+neon_gcc-4.8-linaro_eglibc-2.19_eabi/lib/gcc/arm-openwrt-linux-gnueabi/4.8.3/include/stddef.h:
+
+/home/vincent/samba/gitlab/hammer/Board/trunk/mining_amlogic/amlogic_toolchain/staging_dir/toolchain-arm_cortex-a5+neon_gcc-4.8-linaro_eglibc-2.19_eabi/include/bits/types.h:
+
+/home/vincent/samba/gitlab/hammer/Board/trunk/mining_amlogic/amlogic_toolchain/staging_dir/toolchain-arm_cortex-a5+neon_gcc-4.8-linaro_eglibc-2.19_eabi/include/bits/typesizes.h:
+
+/home/vincent/samba/gitlab/hammer/Board/trunk/mining_amlogic/amlogic_toolchain/staging_dir/toolchain-arm_cortex-a5+neon_gcc-4.8-linaro_eglibc-2.19_eabi/include/libio.h:
+
+/home/vincent/samba/gitlab/hammer/Board/trunk/mining_amlogic/amlogic_toolchain/staging_dir/toolchain-arm_cortex-a5+neon_gcc-4.8-linaro_eglibc-2.19_eabi/include/_G_config.h:
+
+/home/vincent/samba/gitlab/hammer/Board/trunk/mining_amlogic/amlogic_toolchain/staging_dir/toolchain-arm_cortex-a5+neon_gcc-4.8-linaro_eglibc-2.19_eabi/include/wchar.h:
+
+/home/vincent/samba/gitlab/hammer/Board/trunk/mining_amlogic/amlogic_toolchain/staging_dir/toolchain-arm_cortex-a5+neon_gcc-4.8-linaro_eglibc-2.19_eabi/lib/gcc/arm-openwrt-linux-gnueabi/4.8.3/include/stdarg.h:
+
+/home/vincent/samba/gitlab/hammer/Board/trunk/mining_amlogic/amlogic_toolchain/staging_dir/toolchain-arm_cortex-a5+neon_gcc-4.8-linaro_eglibc-2.19_eabi/include/bits/stdio_lim.h:
+
+/home/vincent/samba/gitlab/hammer/Board/trunk/mining_amlogic/amlogic_toolchain/staging_dir/toolchain-arm_cortex-a5+neon_gcc-4.8-linaro_eglibc-2.19_eabi/include/bits/sys_errlist.h:
+
+/home/vincent/samba/gitlab/hammer/Board/trunk/mining_amlogic/amlogic_toolchain/staging_dir/toolchain-arm_cortex-a5+neon_gcc-4.8-linaro_eglibc-2.19_eabi/include/bits/stdio.h:
+
+/home/vincent/samba/gitlab/hammer/Board/trunk/mining_amlogic/amlogic_toolchain/staging_dir/toolchain-arm_cortex-a5+neon_gcc-4.8-linaro_eglibc-2.19_eabi/include/stdlib.h:
+
+/home/vincent/samba/gitlab/hammer/Board/trunk/mining_amlogic/amlogic_toolchain/staging_dir/toolchain-arm_cortex-a5+neon_gcc-4.8-linaro_eglibc-2.19_eabi/include/bits/waitflags.h:
+
+/home/vincent/samba/gitlab/hammer/Board/trunk/mining_amlogic/amlogic_toolchain/staging_dir/toolchain-arm_cortex-a5+neon_gcc-4.8-linaro_eglibc-2.19_eabi/include/bits/waitstatus.h:
+
+/home/vincent/samba/gitlab/hammer/Board/trunk/mining_amlogic/amlogic_toolchain/staging_dir/toolchain-arm_cortex-a5+neon_gcc-4.8-linaro_eglibc-2.19_eabi/include/endian.h:
+
+/home/vincent/samba/gitlab/hammer/Board/trunk/mining_amlogic/amlogic_toolchain/staging_dir/toolchain-arm_cortex-a5+neon_gcc-4.8-linaro_eglibc-2.19_eabi/include/bits/endian.h:
+
+/home/vincent/samba/gitlab/hammer/Board/trunk/mining_amlogic/amlogic_toolchain/staging_dir/toolchain-arm_cortex-a5+neon_gcc-4.8-linaro_eglibc-2.19_eabi/include/bits/byteswap.h:
+
+/home/vincent/samba/gitlab/hammer/Board/trunk/mining_amlogic/amlogic_toolchain/staging_dir/toolchain-arm_cortex-a5+neon_gcc-4.8-linaro_eglibc-2.19_eabi/include/bits/byteswap-16.h:
+
+/home/vincent/samba/gitlab/hammer/Board/trunk/mining_amlogic/amlogic_toolchain/staging_dir/toolchain-arm_cortex-a5+neon_gcc-4.8-linaro_eglibc-2.19_eabi/include/sys/types.h:
+
+/home/vincent/samba/gitlab/hammer/Board/trunk/mining_amlogic/amlogic_toolchain/staging_dir/toolchain-arm_cortex-a5+neon_gcc-4.8-linaro_eglibc-2.19_eabi/include/time.h:
+
+/home/vincent/samba/gitlab/hammer/Board/trunk/mining_amlogic/amlogic_toolchain/staging_dir/toolchain-arm_cortex-a5+neon_gcc-4.8-linaro_eglibc-2.19_eabi/include/sys/select.h:
+
+/home/vincent/samba/gitlab/hammer/Board/trunk/mining_amlogic/amlogic_toolchain/staging_dir/toolchain-arm_cortex-a5+neon_gcc-4.8-linaro_eglibc-2.19_eabi/include/bits/select.h:
+
+/home/vincent/samba/gitlab/hammer/Board/trunk/mining_amlogic/amlogic_toolchain/staging_dir/toolchain-arm_cortex-a5+neon_gcc-4.8-linaro_eglibc-2.19_eabi/include/bits/sigset.h:
+
+/home/vincent/samba/gitlab/hammer/Board/trunk/mining_amlogic/amlogic_toolchain/staging_dir/toolchain-arm_cortex-a5+neon_gcc-4.8-linaro_eglibc-2.19_eabi/include/bits/time.h:
+
+/home/vincent/samba/gitlab/hammer/Board/trunk/mining_amlogic/amlogic_toolchain/staging_dir/toolchain-arm_cortex-a5+neon_gcc-4.8-linaro_eglibc-2.19_eabi/include/sys/sysmacros.h:
+
+/home/vincent/samba/gitlab/hammer/Board/trunk/mining_amlogic/amlogic_toolchain/staging_dir/toolchain-arm_cortex-a5+neon_gcc-4.8-linaro_eglibc-2.19_eabi/include/bits/pthreadtypes.h:
+
+/home/vincent/samba/gitlab/hammer/Board/trunk/mining_amlogic/amlogic_toolchain/staging_dir/toolchain-arm_cortex-a5+neon_gcc-4.8-linaro_eglibc-2.19_eabi/include/alloca.h:
+
+/home/vincent/samba/gitlab/hammer/Board/trunk/mining_amlogic/amlogic_toolchain/staging_dir/toolchain-arm_cortex-a5+neon_gcc-4.8-linaro_eglibc-2.19_eabi/include/bits/stdlib-bsearch.h:
+
+/home/vincent/samba/gitlab/hammer/Board/trunk/mining_amlogic/amlogic_toolchain/staging_dir/toolchain-arm_cortex-a5+neon_gcc-4.8-linaro_eglibc-2.19_eabi/include/bits/stdlib-float.h:
+
+/home/vincent/samba/gitlab/hammer/Board/trunk/mining_amlogic/amlogic_toolchain/staging_dir/toolchain-arm_cortex-a5+neon_gcc-4.8-linaro_eglibc-2.19_eabi/include/string.h:
+
+/home/vincent/samba/gitlab/hammer/Board/trunk/mining_amlogic/amlogic_toolchain/staging_dir/toolchain-arm_cortex-a5+neon_gcc-4.8-linaro_eglibc-2.19_eabi/include/xlocale.h:
+
+/home/vincent/samba/gitlab/hammer/Board/trunk/mining_amlogic/amlogic_toolchain/staging_dir/toolchain-arm_cortex-a5+neon_gcc-4.8-linaro_eglibc-2.19_eabi/include/bits/string.h:
+
+/home/vincent/samba/gitlab/hammer/Board/trunk/mining_amlogic/amlogic_toolchain/staging_dir/toolchain-arm_cortex-a5+neon_gcc-4.8-linaro_eglibc-2.19_eabi/include/bits/string2.h:
+
+/home/vincent/samba/gitlab/hammer/Board/trunk/mining_amlogic/amlogic_toolchain/staging_dir/toolchain-arm_cortex-a5+neon_gcc-4.8-linaro_eglibc-2.19_eabi/include/errno.h:
+
+/home/vincent/samba/gitlab/hammer/Board/trunk/mining_amlogic/amlogic_toolchain/staging_dir/toolchain-arm_cortex-a5+neon_gcc-4.8-linaro_eglibc-2.19_eabi/include/bits/errno.h:
+
+/home/vincent/samba/gitlab/hammer/Board/trunk/mining_amlogic/amlogic_toolchain/staging_dir/toolchain-arm_cortex-a5+neon_gcc-4.8-linaro_eglibc-2.19_eabi/include/linux/errno.h:
+
+/home/vincent/samba/gitlab/hammer/Board/trunk/mining_amlogic/amlogic_toolchain/staging_dir/toolchain-arm_cortex-a5+neon_gcc-4.8-linaro_eglibc-2.19_eabi/include/asm/errno.h:
+
+/home/vincent/samba/gitlab/hammer/Board/trunk/mining_amlogic/amlogic_toolchain/staging_dir/toolchain-arm_cortex-a5+neon_gcc-4.8-linaro_eglibc-2.19_eabi/include/asm-generic/errno.h:
+
+/home/vincent/samba/gitlab/hammer/Board/trunk/mining_amlogic/amlogic_toolchain/staging_dir/toolchain-arm_cortex-a5+neon_gcc-4.8-linaro_eglibc-2.19_eabi/include/asm-generic/errno-base.h:
+
+/home/vincent/samba/gitlab/hammer/Board/trunk/mining_amlogic/amlogic_toolchain/staging_dir/toolchain-arm_cortex-a5+neon_gcc-4.8-linaro_eglibc-2.19_eabi/include/pthread.h:
+
+/home/vincent/samba/gitlab/hammer/Board/trunk/mining_amlogic/amlogic_toolchain/staging_dir/toolchain-arm_cortex-a5+neon_gcc-4.8-linaro_eglibc-2.19_eabi/include/sched.h:
+
+/home/vincent/samba/gitlab/hammer/Board/trunk/mining_amlogic/amlogic_toolchain/staging_dir/toolchain-arm_cortex-a5+neon_gcc-4.8-linaro_eglibc-2.19_eabi/include/bits/sched.h:
+
+/home/vincent/samba/gitlab/hammer/Board/trunk/mining_amlogic/amlogic_toolchain/staging_dir/toolchain-arm_cortex-a5+neon_gcc-4.8-linaro_eglibc-2.19_eabi/include/bits/setjmp.h:
+
+mqrspec.h:
+
+qrencode.h:
