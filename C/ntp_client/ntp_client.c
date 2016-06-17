@@ -5,7 +5,7 @@
 #define NTP_SRV_PORT 123
 #define NTP_PACKET_LEN 48
 
-#define TIMEOUT 5
+#define TIMEOUT 10
 
 #define NTP_SERVER_0 "123.162.191.94" //ntp.cc.sandai.net
 #define NTP_SERVER_1 "91.189.94.4"    //ntp.ubuntu.net
@@ -97,7 +97,7 @@ int main(void)
 		
 		int cnt =0;
 		int get_time = 0;
-		for (cnt = 0;cnt < 10;cnt ++)
+		for (cnt = 0;cnt < 3;cnt ++)
 		{
 			memset(net_tm,0,sizeof(struct tm));
 			if(get_ntp_time(sockfd,&addr,net_tm) == 0)

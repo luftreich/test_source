@@ -63,6 +63,7 @@ History:
 ************************************************************/
 EN_ERROR_NUM mnt_msg_send_usb_state(int nDiskId,EN_MNT_USB_STATE eState);
 
+bool mnt_is_usb_insert(void);
 #ifdef __cplusplus
 }
 #endif

@@ -46,7 +46,7 @@ typedef struct tagSt_usb_query_thread
 /* --- local variable --- */
 static pthread_t s_tid[3] = {0};
 static BOOL bInit = FALSE;
-static St_xl_USB_Part *s_psPartHead;
+static St_xl_USB_Part *s_psPartHead = NULL;
 static St_usb_query_thread s_UsbThread[128];
 /* --- local functions --- */
 EN_ERROR_NUM mnt_usb_unmount_disk(U32 nUSBDiskID);
@@ -55,8 +55,8 @@ static EN_ERROR_NUM parsing_mount_log(char *buf,char *szPartName,char *szMountDi
 static EN_ERROR_NUM mnt_usb_create_mount_log(char *szDiskName,int nDiskId);
 static EN_ERROR_NUM mnt_usb_get_label(char *szDir,const char *szPartName,char *szVolume);
 static EN_ERROR_NUM fat32_get_label(const char *szPartName,char *szVolume);
-static U32 mnt_usb_get_patition_count(U32 nUSBDiskID);
-static U32 mnt_sdcard_get_patition_count(U32 nUSBDiskID);
+static U32 mnt_usb_get_partition_count(U32 nUSBDiskID);
+static U32 mnt_sdcard_get_partition_count(U32 nUSBDiskID);
 static void * mnt_usb_probe_partition_thread(void);
 static EN_ERROR_NUM mnt_usb_read_partition_from_list(St_xl_partition_info *psPartitionInfo,U32 nUSBDiskID,U32 nPartCnt);
 static EN_ERROR_NUM mnt_sdcard_read_partition_from_list(St_xl_partition_info *psPartitionInfo,U32 nUSBDiskID,U32 nPartCnt);
@@ -118,7 +118,6 @@ EN_ERROR_NUM mnt_usb_init(void)
             eError = EN_OK;
         }
         
-        sleep(1);
         mnt_usb_device_probe();
 
         bInit = TRUE;
@@ -172,7 +171,7 @@ EN_ERROR_NUM mnt_sdcard_read_partition(U32 nUSBDiskID,U32 *pnCnt,St_xl_partition
     }
 
     XL_DEBUG(EN_PRINT_INFO, "mnt_usb_read_partition  USBDiskID %d Input start \n",nUSBDiskID);
-    nPartitionCnt = mnt_sdcard_get_patition_count(nUSBDiskID);
+    nPartitionCnt = mnt_sdcard_get_partition_count(nUSBDiskID);
     if (0 == nPartitionCnt)
     {
         XL_DEBUG(EN_PRINT_ERROR,"Get Partition count failed ,nPartition cnt %d\n",nPartitionCnt);
@@ -276,7 +275,7 @@ EN_ERROR_NUM mnt_usb_read_partition(U32 nUSBDiskID,U32 *pnCnt,St_xl_partition_in
     }
 
     XL_DEBUG(EN_PRINT_INFO, "mnt_usb_read_partition  USBDiskID %d Input start \n",nUSBDiskID);
-    nPartitionCnt = mnt_usb_get_patition_count(nUSBDiskID);
+    nPartitionCnt = mnt_usb_get_partition_count(nUSBDiskID);
     if (0 == nPartitionCnt)
     {
         XL_DEBUG(EN_PRINT_ERROR,"Get Partition count failed ,nPartition cnt %d\n",nPartitionCnt);
@@ -907,7 +906,7 @@ EN_ERROR_NUM mnt_usb_read_partition_space(char *szDir,S64 *pu64Total,S64 *pu64Us
 }
 
 /***********************************************************
-Function: mnt_usb_get_patition_count
+Function: mnt_usb_get_partition_count
 Description: Get the partition count from the USB partition list
 Input: nUSBDiskID: The usb disk id
 Output: none
@@ -915,7 +914,7 @@ Return: The partition count of the usbdisk
 Others:
 History:
 ************************************************************/
-static U32 mnt_usb_get_patition_count(U32 nUSBDiskID)
+static U32 mnt_usb_get_partition_count(U32 nUSBDiskID)
 {
     U32 nPartCnt = 0;
     St_xl_USB_Part *pTmpNode;
@@ -940,7 +939,7 @@ static U32 mnt_usb_get_patition_count(U32 nUSBDiskID)
     }
     return nPartCnt;
 }
-static U32 mnt_sdcard_get_patition_count(U32 nUSBDiskID)
+static U32 mnt_sdcard_get_partition_count(U32 nUSBDiskID)
 {
     U32 nPartCnt = 0;
     St_xl_USB_Part *pTmpNode;
@@ -1341,3 +1340,16 @@ static void * mnt_usb_query_mount_log_thread (void * pUSBInfo)
 }
 
 
+bool mnt_is_usb_insert(void)
+{
+    int nPartitionCnt = 0;
+    nPartitionCnt = mnt_usb_get_partition_count(ALL_USB_DISK);
+    if (0 == nPartitionCnt)
+    {
+        return false;
+    }
+    else
+    {
+        return true;
+    }
+}

@@ -196,15 +196,15 @@ void * led_test_thread(void)
                         break;
                 }
                 mnt_led_set_status(EN_LED_RED);
-                usleep(1000*500*2);
+                usleep(1000*500);
                 mnt_led_set_status(EN_LED_GREEN);
-                usleep(1000*500*2);
+                usleep(1000*500);
                 mnt_led_set_status(EN_LED_BLUE);
-                usleep(1000*500*2);
+                usleep(1000*500);
                 mnt_led_set_status(EN_LED_ALL);
-                usleep(1000*500*2);
+                usleep(1000*500);
                 mnt_led_set_status(EN_LED_DARK);
-                usleep(1000*500*2);
+                usleep(1000*500);
         }
         return NULL;
 }

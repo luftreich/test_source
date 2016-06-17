@@ -3,6 +3,103 @@
 
 int convert_jsonp_to_json (char * jsonp_name,char * json_name);
 int parse_update(char * filename);
+
+
+/*
+{
+
+"PeerID":"String",
+
+"PeerIP":"String",
+
+"PeerPort":"String",
+
+"DeviceID":"String", #设备的sn号
+
+"UploadConnections":Int, #当前上传链接数
+
+"DownloadConnections":Int, #当前下行链接数
+
+"UploadSpeed":Int, #当前上行速度
+
+"DownloadSpeed":Int, #当前下载速度
+
+"MaxUploadSpeed":Int, #最大上行速度
+
+"MaxDownloadSpeed":Int, #最大下行速度
+
+"timestamps":Int, #5分钟的总上传流量
+
+"token":"String",
+
+"version":"plugin_version", #固件版本
+
+"DownloadFlow":Int,   #
+
+"DownToken":"String"  #
+
+"NewFileCount":Int,  #新增下载的文件数，以已经下载完成为准 
+
+"TotalFileCount":Int,  #赚钱宝当前内存中总共包含的文件数
+
+"HitCount":Int,           #被sdk命中的文件数，不包含新下载的文件
+
+"M3U8List":[
+
+{"<m3u8_value0>":int},  #  "M3U8"的值：此M3U8的当前连接数
+
+{"<m3u8_value1>:int},
+
+...,
+
+{"<m3u8_valueN>:int},
+
+]
+
+}
+*/
+
+int test1_create_tracker_report_json(char * buffer)
+{
+    cJSON *root,*root1 ,*fmt,*img,*thm,*fld;
+    char *out;
+    int i;
+    
+    fld = cJSON_CreateObject();
+    cJSON_AddItemToObject(fld,"name",cJSON_CreateString("Jack"));
+    cJSON_Delete(fld);
+    
+    root = cJSON_CreateObject();
+    cJSON_AddItemToObject(root,"name",cJSON_CreateString("Jack"));
+    
+    root1 = cJSON_CreateArray();
+    
+#if 1
+    for (i=0;i<5;i++)
+    {
+        fld = cJSON_CreateObject();
+        cJSON_AddItemToArray(root1,fld);
+        char tmp[8] = {0};
+        sprintf(tmp,"item %d",i);
+        cJSON_AddItemToObject(fld,tmp,cJSON_CreateNumber(i));
+    }
+#endif
+    cJSON_AddItemReferenceToObject(root,"array",root1);
+    out = cJSON_Print(root);
+    cJSON_Delete(root);
+    printf("%s \n ",out);
+    free(out);
+    return;
+}
+
+
+
+
+
+
+
+
+
 int main(int argc,char * argv[])
 {
     if (argc != 2)
@@ -10,10 +107,10 @@ int main(int argc,char * argv[])
         printf (" The argument request more items\n");
         return -1;
     }
-
+    int nRet = 0;
+#if 0
     char filename[256] = {0};
     char json_name[256] = {0};
-    int nRet = 0;
     strcpy(filename,argv[1]);
     printf("Input filename %s \n",filename);
     sprintf(json_name,"%s_js",filename);
@@ -22,6 +119,9 @@ int main(int argc,char * argv[])
     nRet = parse_update(json_name);
     
     printf("main return %d \n",nRet);
+#endif
+    char buffer[1024] = {0};
+    test1_create_tracker_report_json(buffer);
     return nRet;
 
 }

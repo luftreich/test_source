@@ -10,12 +10,11 @@
 .PHONY: all clean
 
 # 按照目录先后顺序进行构建, 每一行指向该模块的makfile
-DIRS = $(ROOT)/cjson 
 
 RM = rm
 RMFLAGS = -fr
 RMS = $(ROOT)/build/bin $(ROOT)/build/lib
-
+DIRS=`ls -d */ | grep -v 'bin' | grep -v 'lib' | grep -v 'include' | grep -v 'build'`
 all:
 	@set -e;\
 	for dir in $(DIRS);\
@@ -40,7 +39,7 @@ clean:
 	@set -e;\
 	for dir in $(DIRS);\
 	do \
-		cd $$dir && $(MAKE) clean; \
+		cd $(ROOT)/$$dir && $(MAKE) clean; \
 	done
 	$(RM) $(RMFLAGS) $(RMS)
 	@echo ""

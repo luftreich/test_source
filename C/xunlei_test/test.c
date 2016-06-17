@@ -64,21 +64,22 @@ void * run_all_module(void)
     time_t timep_s,timep_n;
     time (&timep_s);
     char starttime[256] = {0};
-    sprintf(starttime,"%s",asctime(gmtime(&timep_s))); 
-    signal(SIGSEGV,sigroutine);
-    while(1) 
-    {  
+    sprintf(starttime,"%s",asctime(gmtime(&timep_s)));
+    //signal(SIGSEGV,sigroutine);
+    while(1)
+    {
         if(all_module_flag ==1)
-        {break;} 
-       
+        {break;}
+
 
         led_start_run();
-        usb_start_run();
-        sdcard_start_run();
+        //usb_start_run();
+        //sdcard_start_run();
         ethwork_start_run();
         fflush(stdout);
-        
+
         time(&timep_n);
+        sleep(10);
         printf("start time : %s, now time %s \n",starttime,asctime((gmtime(&timep_n))));
     }
 
@@ -114,17 +115,17 @@ int all_module_test(void)
     return 0 ;
 }
 int32_t main(int32_t argc, char **argv) {
-    
+
     char input [2048] = {0};
     int cnt = 0;
-    int ret = 0; 
-    char ip[16] = {0};   
+    int ret = 0;
+    char ip[16] = {0};
     usb_init();
-    
+
     ret = device_get_ip(ip,"eth0");
     if (ret != 0)
     {
-        if (1 == net_detect("eth0")) 
+        if (1 == net_detect("eth0"))
         {
             system("/etc/init.d/S40network restart");
             device_get_ip(ip,"eth0");
@@ -137,7 +138,17 @@ int32_t main(int32_t argc, char **argv) {
     }
 
     printf("The ip is %s \n",ip);
-
+    if (argc >= 2)
+    {
+        if (0 == strcmp("allstart",argv[1]))
+        {
+          all_module_test();
+          while(1)
+          {
+              sleep(60);
+          }
+        }
+    }
     printf(">>> \t\n");
     while(1)
     {
@@ -150,7 +161,7 @@ int32_t main(int32_t argc, char **argv) {
             fprintf(stdout,"quit the XunLei Miner test sw\n");
             exit(1);
         }
-         
+
         for(cnt = 0;cnt < (sizeof(g_module)/sizeof(module_test));cnt++)
         {
             if (!strncmp(g_module[cnt].module_name,input,strlen(g_module[cnt].module_name)-1))
@@ -159,11 +170,9 @@ int32_t main(int32_t argc, char **argv) {
                 break;
             }
         }
-         
+
         continue;
-       
+
     }
     return 0;
 }
-
-

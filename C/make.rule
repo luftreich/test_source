@@ -21,7 +21,7 @@ RMFLAGS = -fr
 # 根据命令行选择编译架构
 CROSS_ARCH=arm
 ifeq ($(arch), $(CROSS_ARCH))
-	CROSS_COMPILE = arm-linux-gnueabihf-
+	CROSS_COMPILE = arm-openwrt-linux-gnueabi-
 else
     ifeq ("$(arch)","mtk")
     CROSS_COMPILE = mipsel-linux-
@@ -51,7 +51,7 @@ endif
 ifeq ("$(NAND_FLASH_SUPPORT)","1")
     CFLAGS += -DNAND_FLASH_SUPPORT
 endif
-
+CFLAGS += -Wunused-function
 
 # 编译中间文件目录
 DIR_OBJS = objs

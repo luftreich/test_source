@@ -1,1 +1,4 @@
-objs/endian.o deps/endian.dep:endian.c /home/vincent/samba/test/C/include/xl_common.h
+objs/endian.o deps/endian.dep:endian.c \
+ /home/vincent/samba/github/test_source/C/include/xl_common.h \
+ /home/vincent/samba/github/test_source/C/include/xl_typedef.h \
+ /home/vincent/samba/github/test_source/C/include/xl_error_no.h

@@ -4,7 +4,7 @@ File Name:xl_mnt_mng.c
 Author:     hanshaoyang
 Version:    1.0
 Date:        2013-11-18
-Description:  mnt Ä£¿éµÄÈë¿Úmainº¯ÊýÈë¿ÚÎÄ¼þ
+Description:  mnt Ä£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½mainï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½
 History:
     1. Date:2013-11-18
        Author:hanshaoyang
@@ -37,46 +37,46 @@ int usb_init(void)
 
 int   timeval_subtract(struct   timeval*   result,   struct   timeval*   x,   struct   timeval*   y);
 
-int time_diff(struct timeval start,struct timeval stop)   
-{   
-    struct   timeval   diff;   
-    timeval_subtract(&diff,&start,&stop);   
-    //printf("×Ü¼ÆÓÃÊ±:%d Î¢Ãë\n",(int)(diff.tv_sec*1000000+diff.tv_usec));   
+int time_diff(struct timeval start,struct timeval stop)
+{
+    struct   timeval   diff;
+    timeval_subtract(&diff,&start,&stop);
+    //printf("ï¿½Ü¼ï¿½ï¿½ï¿½Ê±:%d Î¢ï¿½ï¿½\n",(int)(diff.tv_sec*1000000+diff.tv_usec));
     return (diff.tv_sec*1000*1000)+diff.tv_usec;
-}                     
-    
-  /**   
-      *   ¼ÆËãÁ½¸öÊ±¼äµÄ¼ä¸ô£¬µÃµ½Ê±¼ä²î   
-      *   @param   struct   timeval*   resule   ·µ»Ø¼ÆËã³öÀ´µÄÊ±¼ä   
-      *   @param   struct   timeval*   x             ÐèÒª¼ÆËãµÄÇ°Ò»¸öÊ±¼ä   
-      *   @param   struct   timeval*   y             ÐèÒª¼ÆËãµÄºóÒ»¸öÊ±¼ä   
-      *   return   -1   failure   ,0   success   
-  **/   
-  int   timeval_subtract(struct   timeval*   result,   struct   timeval*   x,   struct   timeval*   y)   
-  {   
-    
-        if ( x->tv_sec > y->tv_sec )   
-            return   -1;   
-    
-        if ( (x->tv_sec == y->tv_sec) && (x->tv_usec>y->tv_usec))   
-            return   -1;
-    
-        result->tv_sec = (y->tv_sec) - (x->tv_sec);   
-        result->tv_usec = (y->tv_usec) - (x->tv_usec);   
-    
+}
 
-        if (result->tv_usec<0)   
-        { 
-            result->tv_sec--;   
-            result->tv_usec+=1000000;   
-        }   
-    
+  /**
+      *   ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ãµï¿½Ê±ï¿½ï¿½ï¿½ï¿½
+      *   @param   struct   timeval*   resule   ï¿½ï¿½ï¿½Ø¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½
+      *   @param   struct   timeval*   x             ï¿½ï¿½Òªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç°Ò»ï¿½ï¿½Ê±ï¿½ï¿½
+      *   @param   struct   timeval*   y             ï¿½ï¿½Òªï¿½ï¿½ï¿½ï¿½ï¿½Äºï¿½Ò»ï¿½ï¿½Ê±ï¿½ï¿½
+      *   return   -1   failure   ,0   success
+  **/
+  int   timeval_subtract(struct   timeval*   result,   struct   timeval*   x,   struct   timeval*   y)
+  {
+
+        if ( x->tv_sec > y->tv_sec )
+            return   -1;
+
+        if ( (x->tv_sec == y->tv_sec) && (x->tv_usec>y->tv_usec))
+            return   -1;
+
+        result->tv_sec = (y->tv_sec) - (x->tv_sec);
+        result->tv_usec = (y->tv_usec) - (x->tv_usec);
+
+
+        if (result->tv_usec<0)
+        {
+            result->tv_sec--;
+            result->tv_usec+=1000000;
+        }
+
         printf("start: sec %d ,us %d \n",(int)x->tv_sec,(int)x->tv_usec);
         printf("stop: sec %d ,us %d \n",(int)y->tv_sec,(int)y->tv_usec);
 
-        return 0;   
-  }   
-    
+        return 0;
+  }
+
 
 static int mnt_main(void)
 {
@@ -84,12 +84,12 @@ static int mnt_main(void)
     int nInitFlag = 0;
 
 
-    /*¸÷¸ö×ÓÄ£¿éµÄ³õÊ¼»¯*/
+    /*ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä£ï¿½ï¿½ï¿½Ä³ï¿½Ê¼ï¿½ï¿½*/
     if (EN_OK != mnt_usb_init())
     {
         nInitFlag |= (1<<0);
     }
-    
+
     return nRet;
 }
 
@@ -191,7 +191,7 @@ int mnt_ubus_usb_plug_notify(void)
 
 static int CreateMyFile(char * szFileName,int nFileLength)
 {
-   FILE* fp = fopen(szFileName, "wb+"); // ´´½¨ÎÄ¼þ
+   FILE* fp = fopen(szFileName, "wb+"); // ï¿½ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½
    if(fp==NULL)
    {
            printf("creat file error\n");
@@ -199,8 +199,8 @@ static int CreateMyFile(char * szFileName,int nFileLength)
    }
    else
    {
-	   fseek(fp, nFileLength-1, SEEK_SET);    // ½«ÎÄ¼þµÄÖ¸Õë ÒÆÖÁ Ö¸¶¨´óÐ¡µÄÎ»ÖÃ
-	   fputc(32, fp);                        // ÔÚÒªÖ¸¶¨´óÐ¡ÎÄ¼þµÄÄ©Î²Ëæ±ã·ÅÒ»¸öÊý¾Ý
+	   fseek(fp, nFileLength-1, SEEK_SET);    // ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½Ö¸ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ Ö¸ï¿½ï¿½ï¿½ï¿½Ð¡ï¿½ï¿½Î»ï¿½ï¿½
+	   fputc(32, fp);                        // ï¿½ï¿½ÒªÖ¸ï¿½ï¿½ï¿½ï¿½Ð¡ï¿½Ä¼ï¿½ï¿½ï¿½Ä©Î²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 	   fclose(fp);
            return 0;
    }
@@ -213,7 +213,7 @@ void do_read_usb_once(void)
         char file_name[1024] = {0};
 
         sprintf(usb_path,"%s",pDestData->szMountDir);
-        
+
         sprintf(file_name,"%s/.testdata",usb_path);
         if (access(file_name,F_OK) != 0)
         {
@@ -235,7 +235,7 @@ void do_read_sdcard_once(void)
         char file_name[1024] = {0};
 
         sprintf(usb_path,"%s",pSDDestData->szMountDir);
-        
+
         sprintf(file_name,"%s/.testdata",usb_path);
         if (access(file_name,F_OK) != 0)
         {
@@ -257,8 +257,13 @@ static void * write_usb_all_thread(void)
     char command[1024] = {0};
     char file_name[1024] = {0};
     int i=0;
+    while (pDestData == NULL)
+    {
+        fprintf(stderr,"can't get partition data \n");
+        sleep(5);
+    }
     sprintf(usb_path,"%s",pDestData->szMountDir);
-        
+
     sprintf(file_name,"/tmp/.usbwrite");
     if (access(file_name,F_OK) != 0)
     {
@@ -278,7 +283,7 @@ static void * write_usb_all_thread(void)
         {
                 break;
         }
-        
+
         fflush(stdout);
    }
     return NULL;
@@ -291,7 +296,7 @@ static void * write_sdcard_all_thread(void)
     char file_name[1024] = {0};
     int i=0;
     sprintf(usb_path,"%s",pSDDestData->szMountDir);
-        
+
     sprintf(file_name,"/tmp/.sdcardwrite");
     if (access(file_name,F_OK) != 0)
     {
@@ -311,7 +316,7 @@ static void * write_sdcard_all_thread(void)
         {
                 break;
         }
-        
+
         fflush(stdout);
    }
     return NULL;
@@ -323,14 +328,14 @@ static void * read_usb_all_thread(void)
     char file_name[1024] = {0};
     int i=0;
     sprintf(usb_path,"%s",pDestData->szMountDir);
-        
+
     sprintf(file_name,"%s/.usbread",usb_path);
     if (access(file_name,F_OK) != 0)
     {
           CreateMyFile(file_name,100*1000);
     }
     sprintf(command,"cp  -a %s/.usbread /tmp/.usbread",usb_path);
-    fprintf(stdout,"start read from %s\n",usb_path); 
+    fprintf(stdout,"start read from %s\n",usb_path);
     tid_r_break=0;
     while(1)
     {
@@ -356,14 +361,14 @@ static void * read_sdcard_all_thread(void)
     char file_name[1024] = {0};
     int i=0;
     sprintf(usb_path,"%s",pSDDestData->szMountDir);
-        
+
     sprintf(file_name,"%s/.sdcardread",usb_path);
     if (access(file_name,F_OK) != 0)
     {
           CreateMyFile(file_name,100*1000);
     }
     sprintf(command,"cp  -a %s/.sdcardread /tmp/.sdcardread",usb_path);
-    fprintf(stdout,"start read from %s\n",usb_path); 
+    fprintf(stdout,"start read from %s\n",usb_path);
     sdtid_r_break=0;
     while(1)
     {
@@ -415,7 +420,7 @@ void do_read_sdcard_all(void)
 int usb_module_test(void)
 {
      char input[256] = {0};
-     
+
      int ret = mnt_usb_init_data();
      if (ret != 0)
      {
@@ -462,7 +467,7 @@ int usb_module_test(void)
          {
              print_usage(stdout);
          }
-     } 
+     }
      return 0;
 }
 
@@ -516,7 +521,7 @@ int mnt_sdcard_term_data(void)
 int sdcard_module_test(void)
 {
      char input[256] = {0};
-     
+
      int ret = mnt_sdcard_init_data();
      if (ret != 0)
      {
@@ -563,7 +568,7 @@ int sdcard_module_test(void)
          {
              print_usage_sdcard(stdout);
          }
-     } 
+     }
      return 0;
 }
 
@@ -598,7 +603,7 @@ EN_ERROR_NUM device_get_ip(char* ip,const char *pEthName)
     }
 
     memcpy(&sin,&ifr.ifr_addr,sizeof(sin));
-    
+
     sprintf(ip,"%s",inet_ntoa(sin.sin_addr));
     return EN_OK;
 }
@@ -618,7 +623,7 @@ int net_detect(char* net_name)
 {
     int skfd = 0;
     struct ifreq ifr;
- 
+
     skfd = socket(AF_INET, SOCK_DGRAM, 0);
     if(skfd < 0)
     {
@@ -626,7 +631,7 @@ int net_detect(char* net_name)
         return -1;
     }
 
-    strcpy(ifr.ifr_name, net_name);         
+    strcpy(ifr.ifr_name, net_name);
     if(ioctl(skfd, SIOCGIFFLAGS, &ifr) <0 )
     {
         printf("%s:%d IOCTL error!\n", __FILE__, __LINE__);
@@ -634,7 +639,7 @@ int net_detect(char* net_name)
         close(skfd);
         return -1;
     }
-                 
+
     if(ifr.ifr_flags & IFF_RUNNING)
     {
         return 1;
@@ -665,12 +670,12 @@ static void print_sdcard_log(void)
     {
             printf(" *** sdcard write error !!! ***\n");
     }
- 
+
     char usb_path[1024] = {0};
     char file_name[1024]={0};
     char command[1024] = {0};
     int ret = 0;
-    
+
     sprintf(usb_path,"%s",pSDDestData->szMountDir);
     sprintf(file_name,"%s/.sdcard_detect",usb_path);
     sprintf(command,"rm -rf  %s ",file_name);
@@ -706,12 +711,12 @@ static void print_usb_log(void)
     {
             printf(" *** usb write error !!! ***\n");
     }
- 
+
     char usb_path[1024] = {0};
     char file_name[1024]={0};
     char command[1024] = {0};
     int ret = 0;
-    
+
     sprintf(usb_path,"%s",pDestData->szMountDir);
     sprintf(file_name,"%s/.usb_detect",usb_path);
     sprintf(command,"rm -rf  %s ",file_name);
@@ -731,6 +736,10 @@ void usb_start_run()
 {
     if (0 == usb_start_flag)
     {
+        while (mnt_is_usb_insert()==false)
+        {
+            sleep(1);
+        }
         mnt_usb_init_data();
         do_write_usb_all();
         do_read_usb_all();

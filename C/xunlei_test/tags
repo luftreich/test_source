@@ -9,6 +9,7 @@ BIN	Makefile	/^BIN = xunlei_test$/;"	m
 BLUE_LED	led_test.c	31;"	d	file:
 BUFFER_SIZE	xl_mnt_msg_process.c	19;"	d	file:
 BUF_LEN	xl_usb_mng.c	45;"	d	file:
+CreateMyFile	flash.c	/^static int CreateMyFile(char * szFileName,int nFileLength)$/;"	f	file:	signature:(char * szFileName,int nFileLength)
 CreateMyFile	xl_mnt_mng.c	/^static int CreateMyFile(char * szFileName,int nFileLength)$/;"	f	file:	signature:(char * szFileName,int nFileLength)
 DEV_CUT_NAME	xl_usb_device.c	20;"	d	file:
 DISK_MOUNTED	xl_mnt.h	9;"	d
@@ -73,6 +74,8 @@ LIB_STATIC	Makefile	/^LIB_STATIC =$/;"	m
 LINK_LIBS	Makefile	/^LINK_LIBS = pthread  $/;"	m
 MAX_NO_PACKETS	ping.c	16;"	d	file:
 MAX_WAIT_TIME	ping.c	15;"	d	file:
+MEDIA_READ_FILE	flash.c	2;"	d	file:
+MEDIA_WRITE_FILE	flash.c	3;"	d	file:
 MNT_USB_MOUNT_FILE	xl_usb_mng.c	35;"	d	file:
 MOUNT_FILE	xl_usb_mng.c	33;"	d	file:
 MOUNT_LOG_FILE	xl_usb_mng.c	34;"	d	file:
@@ -106,24 +109,28 @@ _XL_MNT_MSG_H_	xl_mnt_mng.h	2;"	d
 _XL_MNT_MSG_PROCESS_H_	xl_mnt_msg_process.h	2;"	d
 _XL_MNT_USB_H_	xl_mnt_usb.h	2;"	d
 action	xl_usb_device.c	/^    const char *action;$/;"	m	struct:luther_gliethttp	file:	access:public
+all_module_flag	test.c	/^static int all_module_flag = 0;$/;"	v	file:
 all_module_test	test.c	/^int all_module_test(void)$/;"	f	signature:(void)
 all_module_test	test.c	/^int all_module_test(void);$/;"	p	file:	signature:(void)
+all_tid	test.c	/^pthread_t all_tid = 0;$/;"	v
 bInit	xl_usb_mng.c	/^static BOOL bInit = FALSE;$/;"	v	file:
 bMounted	xl_mnt.h	/^    BOOL bMounted;                \/*0:mounted,1:unmounted*\/$/;"	m	struct:tagSt_xl_partition_info	access:public
 bool	led_test.c	/^typedef unsigned int bool;$/;"	t	file:
 cal_chksum	ping.c	/^unsigned short cal_chksum(unsigned short *addr,int len)$/;"	f	signature:(unsigned short *addr,int len)
 cal_chksum	ping.c	/^unsigned short cal_chksum(unsigned short *addr,int len);$/;"	p	file:	signature:(unsigned short *addr,int len)
-datalen	ping.c	/^int sockfd,datalen=1480;$/;"	v
+datalen	ping.c	/^int sockfd,datalen=560;$/;"	v
 dest_addr	ping.c	/^struct sockaddr_in dest_addr;$/;"	v	typeref:struct:sockaddr_in
 detect_stat	xl_usb_mng.c	/^    EN_MNT_USB_STATE detect_stat;$/;"	m	struct:tagSt_usb_query_thread	file:	access:public
 dev_name	xl_mnt_mng.h	/^    char dev_name[16];$/;"	m	struct:tagSt_mnt_netlink_dev	access:public
 device_get_ip	module_test.h	/^int device_get_ip(char * , char *);$/;"	p	signature:(char * , char *)
 device_get_ip	xl_mnt_mng.c	/^EN_ERROR_NUM device_get_ip(char* ip,const char *pEthName)$/;"	f	signature:(char* ip,const char *pEthName)
 devname	xl_usb_device.c	/^    const char *devname;$/;"	m	struct:luther_gliethttp	file:	access:public
+do_read_flash_all	flash.c	/^static void do_read_flash_all(void)$/;"	f	file:	signature:(void)
 do_read_sdcard_all	xl_mnt_mng.c	/^void do_read_sdcard_all(void)$/;"	f	signature:(void)
 do_read_sdcard_once	xl_mnt_mng.c	/^void do_read_sdcard_once(void)$/;"	f	signature:(void)
 do_read_usb_all	xl_mnt_mng.c	/^void do_read_usb_all(void)$/;"	f	signature:(void)
 do_read_usb_once	xl_mnt_mng.c	/^void do_read_usb_once(void)$/;"	f	signature:(void)
+do_write_flash_all	flash.c	/^static void do_write_flash_all(void)$/;"	f	file:	signature:(void)
 do_write_sdcard_all	xl_mnt_mng.c	/^void do_write_sdcard_all(void)$/;"	f	signature:(void)
 do_write_sdcard_once	xl_mnt_mng.c	/^void do_write_sdcard_once(void)$/;"	f	signature:(void)
 do_write_usb_all	xl_mnt_mng.c	/^void do_write_usb_all(void)$/;"	f	signature:(void)
@@ -140,6 +147,10 @@ false	led_test.c	18;"	d	file:
 fat32_get_label	xl_usb_mng.c	/^static EN_ERROR_NUM fat32_get_label(const char *szPartName,char *szVolume)$/;"	f	file:	signature:(const char *szPartName,char *szVolume)
 fat32_get_label	xl_usb_mng.c	/^static EN_ERROR_NUM fat32_get_label(const char *szPartName,char *szVolume);$/;"	p	file:	signature:(const char *szPartName,char *szVolume)
 firmware	xl_usb_device.c	/^    const char *firmware;$/;"	m	struct:luther_gliethttp	file:	access:public
+flash_module_test	flash.c	/^int flash_module_test(void)$/;"	f	signature:(void)
+flash_module_test	module_test.h	/^int flash_module_test(void);$/;"	p	signature:(void)
+flash_r_break	flash.c	/^static int flash_r_break = 0;$/;"	v	file:
+flash_w_break	flash.c	/^static int flash_w_break = 0;$/;"	v	file:
 from	ping.c	/^struct sockaddr_in from;$/;"	v	typeref:struct:sockaddr_in
 g_DevID	xl_usb_device.c	/^static char g_DevID[128] = {0};$/;"	v	file:
 g_module	test.c	/^module_test g_module[] = {$/;"	v
@@ -186,6 +197,7 @@ message	xl_mnt_msg_process.c	/^struct message$/;"	s	file:
 message::msg_text	xl_mnt_msg_process.c	/^    char msg_text[BUFFER_SIZE];$/;"	m	struct:message	file:	access:public
 message::msg_type	xl_mnt_msg_process.c	/^    long msg_type;$/;"	m	struct:message	file:	access:public
 minor	xl_usb_device.c	/^    int minor;$/;"	m	struct:luther_gliethttp	file:	access:public
+mnt_flash_term_data	flash.c	/^static int mnt_flash_term_data(void)$/;"	f	file:	signature:(void)
 mnt_led_reserve_status	xl_mnt_mng.h	/^void mnt_led_reserve_status(void);$/;"	p	signature:(void)
 mnt_led_set_status	led_test.c	/^int mnt_led_set_status(EN_LED_COLOR eColor)$/;"	f	signature:(EN_LED_COLOR eColor)
 mnt_led_set_status	xl_mnt_mng.h	/^int mnt_led_set_status(EN_LED_COLOR eColor);$/;"	p	signature:(EN_LED_COLOR eColor)
@@ -307,6 +319,7 @@ ping_thread	ping.c	/^void * ping_thread(void)$/;"	f	signature:(void)
 ping_thread_disable	ping.c	/^static int ping_thread_disable = 0;$/;"	v	file:
 ping_tid	ping.c	/^static pthread_t  ping_tid = 0;$/;"	v	file:
 print_sdcard_log	xl_mnt_mng.c	/^static void print_sdcard_log(void)$/;"	f	file:	signature:(void)
+print_usage	flash.c	/^static void print_usage(FILE *stream)$/;"	f	file:	signature:(FILE *stream)
 print_usage	led_test.c	/^static void print_usage(FILE *stream)$/;"	f	file:	signature:(FILE *stream)
 print_usage	test.c	/^void print_usage(FILE *stream)$/;"	f	signature:(FILE *stream)
 print_usage	xl_mnt_mng.c	/^static void print_usage(FILE *stream)$/;"	f	file:	signature:(FILE *stream)
@@ -315,11 +328,13 @@ print_usb_log	xl_mnt_mng.c	/^static void print_usb_log(void)$/;"	f	file:	signatu
 product	xl_usb_device.c	/^    const char * product;$/;"	m	struct:luther_gliethttp	file:	access:public
 program_name	test.c	/^char * program_name = NULL;$/;"	v
 psPartitionHead	xl_mnt.h	/^    St_xl_partition_info * psPartitionHead;$/;"	m	struct:tagSt_xl_USBDisk_info	access:public
+read_flash_all_thread	flash.c	/^static void * read_flash_all_thread(void)$/;"	f	file:	signature:(void)
 read_sdcard_all_thread	xl_mnt_mng.c	/^static void * read_sdcard_all_thread(void)$/;"	f	file:	signature:(void)
 read_usb_all_thread	xl_mnt_mng.c	/^static void * read_usb_all_thread(void)$/;"	f	file:	signature:(void)
 recv_packet	ping.c	/^void recv_packet()$/;"	f
 recv_packet	ping.c	/^void recv_packet(void);$/;"	p	file:	signature:(void)
 recvpacket	ping.c	/^char recvpacket[PACKET_SIZE];$/;"	v
+run_all_module	test.c	/^void * run_all_module(void)$/;"	f	signature:(void)
 s_UsbThread	xl_usb_mng.c	/^static St_usb_query_thread s_UsbThread[128];$/;"	v	file:
 s_psPartHead	xl_usb_mng.c	/^static St_xl_USB_Part *s_psPartHead;$/;"	v	file:
 s_qid	xl_mnt_msg_process.c	/^static int s_qid = 0;$/;"	v	file:
@@ -338,10 +353,12 @@ sdtid_w_break	xl_mnt_mng.c	/^static int sdtid_w_break=0,sdtid_r_break=0;$/;"	v	f
 send_packet	ping.c	/^void send_packet()$/;"	f
 send_packet	ping.c	/^void send_packet(void);$/;"	p	file:	signature:(void)
 sendpacket	ping.c	/^char sendpacket[PACKET_SIZE];$/;"	v
-sockfd	ping.c	/^int sockfd,datalen=1480;$/;"	v
+sigroutine	test.c	/^void sigroutine(int duno)$/;"	f	signature:(int duno)
+sockfd	ping.c	/^int sockfd,datalen=560;$/;"	v
 state	xl_mnt_mng.h	/^    int state;$/;"	m	struct:tagSt_mnt_netlink_dev	access:public
 statistics	ping.c	/^void statistics(int signo)$/;"	f	signature:(int signo)
 statistics	ping.c	/^void statistics(int signo);$/;"	p	file:	signature:(int signo)
+stop_all_module	test.c	/^void stop_all_module(void)$/;"	f	signature:(void)
 subsystem	xl_usb_device.c	/^    const char *subsystem;$/;"	m	struct:luther_gliethttp	file:	access:public
 szDiskName	xl_mnt.h	/^	char szDiskName[32];          \/*Device name of the USB Disk : can't delete it ,because we need the name to parse the kernel log*\/$/;"	m	struct:tagSt_xl_storage_info	access:public
 szMountDir	xl_mnt.h	/^    char  szMountDir[256];         \/*Mounted path*\/$/;"	m	struct:tagSt_xl_partition_info	access:public
@@ -395,12 +412,14 @@ tagmodule_test::module_name	test.c	/^    char * module_name;$/;"	m	struct:tagmod
 tagmodule_test::test_fun	test.c	/^    TFun * test_fun;$/;"	m	struct:tagmodule_test	file:	access:public
 test_fun	test.c	/^    TFun * test_fun;$/;"	m	struct:tagmodule_test	file:	access:public
 tid	xl_usb_mng.c	/^    pthread_t tid;$/;"	m	struct:tagSt_usb_query_thread	file:	access:public
+tid_r	flash.c	/^static pthread_t tid_r=0;$/;"	v	file:
 tid_r	xl_mnt_mng.c	/^static pthread_t tid_w = 0,tid_r = 0;$/;"	v	file:
 tid_r_break	xl_mnt_mng.c	/^static int tid_w_break=0,tid_r_break=0;$/;"	v	file:
+tid_w	flash.c	/^static pthread_t tid_w=0;$/;"	v	file:
 tid_w	xl_mnt_mng.c	/^static pthread_t tid_w = 0,tid_r = 0;$/;"	v	file:
 tid_w_break	xl_mnt_mng.c	/^static int tid_w_break=0,tid_r_break=0;$/;"	v	file:
-time_diff	xl_mnt_mng.c	/^int time_diff(struct timeval start,struct timeval stop)   $/;"	f	signature:(struct timeval start,struct timeval stop)
-timeval_subtract	xl_mnt_mng.c	/^  int   timeval_subtract(struct   timeval*   result,   struct   timeval*   x,   struct   timeval*   y)   $/;"	f	signature:(struct timeval* result, struct timeval* x, struct timeval* y)
+time_diff	xl_mnt_mng.c	/^int time_diff(struct timeval start,struct timeval stop)$/;"	f	signature:(struct timeval start,struct timeval stop)
+timeval_subtract	xl_mnt_mng.c	/^  int   timeval_subtract(struct   timeval*   result,   struct   timeval*   x,   struct   timeval*   y)$/;"	f	signature:(struct timeval* result, struct timeval* x, struct timeval* y)
 timeval_subtract	xl_mnt_mng.c	/^int   timeval_subtract(struct   timeval*   result,   struct   timeval*   x,   struct   timeval*   y);$/;"	p	file:	signature:(struct timeval* result, struct timeval* x, struct timeval* y)
 true	led_test.c	14;"	d	file:
 tv_sub	ping.c	/^void tv_sub(struct timeval *out,struct timeval *in)$/;"	f	signature:(struct timeval *out,struct timeval *in)
@@ -420,6 +439,7 @@ usb_start_run	module_test.h	/^void usb_start_run(void);$/;"	p	signature:(void)
 usb_start_run	xl_mnt_mng.c	/^void usb_start_run()$/;"	f
 usb_stop_run	module_test.h	/^void usb_stop_run(void);$/;"	p	signature:(void)
 usb_stop_run	xl_mnt_mng.c	/^void usb_stop_run()$/;"	f
+write_flash_all_thread	flash.c	/^static void * write_flash_all_thread(void)$/;"	f	file:	signature:(void)
 write_sdcard_all_thread	xl_mnt_mng.c	/^static void * write_sdcard_all_thread(void)$/;"	f	file:	signature:(void)
 write_usb_all_thread	xl_mnt_mng.c	/^static void * write_usb_all_thread(void)$/;"	f	file:	signature:(void)
 xl_decode_u32	xl_mnt_msg_process.c	/^static int xl_decode_u32(CHAR* pcBuf,ULONG *pulData)$/;"	f	file:	signature:(CHAR* pcBuf,ULONG *pulData)

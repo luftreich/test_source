@@ -52,7 +52,7 @@ static int xl_encode_u32(char * pcBuf,ULONG ulData,int ulLen)
 }
 int mnt_usb_msg_init(void)
 {
-    char *msg_path = "/tmp/.mnt_usb_queue";
+    char *msg_path = "/tmp/.mnt_usb_queue_test";
     key_t  key;
 
     if( access(msg_path, F_OK)!=0 )

@@ -1,2 +1,4 @@
-objs/cjson_main.o deps/cjson_main.dep:cjson_main.c /home/vincent/samba/test/C/include/xl_common.h \
- cJSON.h
+objs/cjson_main.o deps/cjson_main.dep:cjson_main.c \
+ /home/vincent/samba/github/test_source/C/include/xl_common.h \
+ /home/vincent/samba/github/test_source/C/include/xl_typedef.h \
+ /home/vincent/samba/github/test_source/C/include/xl_error_no.h cJSON.h
