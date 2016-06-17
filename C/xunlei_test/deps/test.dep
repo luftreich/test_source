@@ -1,2 +1,0 @@
-objs/test.o deps/test.dep:test.c /home/vincent/samba/test/C/include/xl_common.h \
- module_test.h

@@ -1,1 +1,0 @@
-objs/ping.o deps/ping.dep:ping.c /home/vincent/samba/test/C/include/xl_common.h

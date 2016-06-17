@@ -1,1 +1,0 @@
-objs/test_erase_flash.o deps/test_erase_flash.dep:test_erase_flash.c

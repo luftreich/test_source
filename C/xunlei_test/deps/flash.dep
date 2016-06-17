@@ -1,1 +1,0 @@
-objs/flash.o deps/flash.dep:flash.c /home/vincent/samba/test/C/include/xl_common.h

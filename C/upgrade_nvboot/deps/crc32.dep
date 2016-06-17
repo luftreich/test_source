@@ -1,1 +1,0 @@
-objs/crc32.o deps/crc32.dep:crc32.c /home/vincent/samba/test/C/include/xl_common.h

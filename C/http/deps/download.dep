@@ -1,2 +1,0 @@
-objs/download.o deps/download.dep:download.c \
- /home/vincent/samba/github/test_source/C/include/xl_common.h

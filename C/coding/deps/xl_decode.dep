@@ -1,2 +1,0 @@
-objs/xl_decode.o deps/xl_decode.dep:xl_decode.c /home/vincent/samba/test/C/include/xl_common.h \
- /home/vincent/samba/test/C/include/xl_typedef.h

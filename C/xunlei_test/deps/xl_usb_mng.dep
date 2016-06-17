@@ -1,4 +1,0 @@
-objs/xl_usb_mng.o deps/xl_usb_mng.dep:xl_usb_mng.c /home/vincent/samba/test/C/include/xl_common.h \
- xl_mnt_usb.h xl_mnt.h /home/vincent/samba/test/C/include/xl_typedef.h \
- /home/vincent/samba/test/C/include/xl_error_no.h xl_mnt_command.h \
- xl_mnt_mng.h xl_mnt_led.h

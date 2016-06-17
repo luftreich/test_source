@@ -1,1 +1,0 @@
-objs/stat.o deps/stat.dep:stat.c /home/vincent/samba/test/C/include/xl_common.h

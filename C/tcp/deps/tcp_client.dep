@@ -1,2 +1,0 @@
-objs/tcp_client.o deps/tcp_client.dep:tcp_client.c \
- /home/vincent/samba/github/test_source/C/include/xl_common.h
