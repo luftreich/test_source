@@ -1,4 +1,0 @@
-objs/ntp_client.o deps/ntp_client.dep:ntp_client.c \
- /home/vincent/samba/github/test_source/C/include/xl_common.h \
- /home/vincent/samba/github/test_source/C/include/xl_typedef.h \
- /home/vincent/samba/github/test_source/C/include/xl_error_no.h
